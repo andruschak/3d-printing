@@ -21,7 +21,7 @@ https://3dprint.wiki/reprap/anet/a8
 
 
 ### Some assembly required
-![Mid Build, pre electronics](https://github.com/andruschak/3d-printing/build.png)
+![Mid Build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/build.png)
 
 ### First print
 - pictures of print
