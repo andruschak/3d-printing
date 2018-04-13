@@ -132,13 +132,13 @@ Width | 8
 
 ## Upgrade Prints
 
-![Anet A8 Prusa i3 Simple filament guide (Horizontal)](https://www.thingiverse.com/thing:1764285)
+[Anet A8 Prusa i3 Simple filament guide (Horizontal)](https://www.thingiverse.com/thing:1764285)
 
-![Hesine M-505, Anet A8 - Center Nozzle Fan](https://www.thingiverse.com/thing:1620630)
+[Hesine M-505, Anet A8 - Center Nozzle Fan](https://www.thingiverse.com/thing:1620630)
 
-![Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
+[Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
-![Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
+[Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
 ## Example prints
 
@@ -158,7 +158,7 @@ Allows for a more rigid frame. Definate improvement in quality. Seems the A8 lik
 
 [![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
 
-Timelapse video of T brack build
+Timelapse video of T bracket build
 
 
 ------
@@ -169,15 +169,15 @@ There are a ton of packages out there you can use. For quick results I wanted to
 
 ### Slicers
 
-[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software): quick and easy out of the box. Running in Win10.
+[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
 
 
 
 ### 3d Model Creation
 
-[Google Sketchup:](https://www.sketchup.com/): Ive used this in other projects. Pretty good and free.
+[Google Sketchup:](https://www.sketchup.com/) Ive used this in other projects. Pretty good and free.
 
-[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators): havent read much into it yet. Suppose to be complete and free - with learning curve
+[Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
 
 
  
@@ -185,6 +185,7 @@ There are a ton of packages out there you can use. For quick results I wanted to
 
 Next steps
 
+- [ ] Safety upgrades
 - [ ] Highlevel gcode information
 - [ ] Write up on 2D plotting
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
