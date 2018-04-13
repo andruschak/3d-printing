@@ -171,6 +171,7 @@ There are a ton of packages out there you can use. For quick results I wanted to
 
 [Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
 
+![Cura screenshot with settings](https://github.com/andruschak/3d-printing/blob/master/images/360-cooler.png)
 
 
 ### 3d Model Creation
