@@ -138,7 +138,7 @@ Width | 8
 
 [Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
-[Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
+[Anet A8 T corner](https://www.thingiverse.com/thing:1672959)
 
 ## Example prints
 
