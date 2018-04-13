@@ -52,19 +52,19 @@ Altogether it probably took me a solid 8-10h to build. That was broken up over a
 
 As a final note, wrapping the cabling was a bit more challenging than I thought. Ive done a lot of computer builds in my day and feel I am pretty adept at cable management. I will admit, this took me a few times to get wired the way I wanted. Adding in the auto-leveller later forced me to re-wrap the extruder bundle.
 
-eye-candy
+# Eye-candy
 
 ![kit as it came](https://github.com/andruschak/3d-printing/blob/master/images/kit-small.png)
- 
+Kit as it came in the box 
 
-![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/images/basic-frame-small.png)
- 
+![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/master/images/basic-frame-small.png)
+Basic frame starting to look like a printer
 
 ![mid build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/images/physical-complete-small.png)
- 
+Physical is complete, onto electronics 
 
 ![finished printer](https://github.com/andruschak/3d-printing/blob/master/images/finished-small.png)
-
+The finished printer
  
 
  
