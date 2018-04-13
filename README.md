@@ -1,6 +1,6 @@
 # Adventures in 3d-printing
 
-First foray into 3D Printing
+First foray into 3D Printing - document is a work in progress
 
 
 I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project.
@@ -28,10 +28,12 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 ### Resources
 
 Yuge list of resources for the A8:
+
 wiki: https://3dprint.wiki/reprap/anet/a8
 
 
 I'm not a facebook guy but this is a great group to lurk on:
+
 fb group: https://www.facebook.com/groups/1068531466501015
 
  
@@ -50,7 +52,7 @@ The molded x-axis motor mount had a slight crack in it but didnt look like it wo
 
 Altogether it probably took me a solid 8-10h to build. That was broken up over a 3 days. I left the brown sticker on the acrylic because I think it ends up looking cooler - and saved me a ton of peeling time. That did mean everything fit a bit more snug but it will probably add some strength to the overall chassis in the end.
 
-As a final note, wrapping the cabling was a bit more challenging than I thought. Ive done a lot of computer builds in my day and feel I am pretty adept at cable management. I will admit, this took me a few times to get wired the way I wanted. Adding in the auto-leveller later forced me to re-wrap the extruder bundle.
+As a final note, wrapping the cabling was a bit more challenging than I thought. Ive done a lot of computer builds in my day and feel I am pretty adept at cable management. I will admit this took me a few times to get wired the way I wanted. Adding in the auto-leveller later forced me to re-wrap the extruder bundle.
 
 # Eye-candy
 
@@ -71,7 +73,7 @@ The finished printer
 
 ### Initial Configuration and Leveling
 
-This took a bit of experimenting. My kit came with an auto-leveling sensor, which I didnt install until after my first couple prints. I didnt realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
+This took a bit of experimenting. My kit came with an auto-leveling sensor which I didn't install until after my first couple prints. At first, I did not realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
 
 Also, I found when using a piece of A4 paper to calibrate, I got best results when it was a light drag on the paper vs a heavy press.
 
@@ -84,6 +86,10 @@ Admittedly still new to this. The hotbed came pre-tapped from the factory and I 
 
 The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
 
+
+----------------------
+
+# WIP
  
 # Printing
 
