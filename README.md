@@ -21,12 +21,13 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 - [x] Compatible with models from Thingiverse
 - [x] Supports multiple different filament types
 - [ ] Ethernet/Wifi connectivity
-- [ ] Non-fire causing*
-- [ ] Enclosed
-- [ ] Metal Frame
-- [ ] Dual Extruder
+- [ ] Non-fire causing
+- [ ] Enclosed 
+- [ ] Metal Frame 
+- [ ] Dual Extruder (can be used to make dissolvable support structures)
 
- 
+The A8 
+
 
 ### Resources
 
@@ -169,10 +170,12 @@ Fusion 360 - havent read much into it yet. Suppose to be complete and free - wit
 
 
  
-
+------
 
 Next steps
 
+- [ ] Highlevel gcode information
+- [ ] Write up on 2D plotting
 - [ ] Support structure mods
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
 - [ ] Flash firmware to Marlin (Skynet 3D)
