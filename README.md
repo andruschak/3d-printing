@@ -54,16 +54,16 @@ As a final note, wrapping the cabling was a bit more challenging than I thought.
 
 eye-candy
 
-![kit as it came](https://github.com/andruschak/3d-printing/blob/master/kit-small.png)
+![kit as it came](https://github.com/andruschak/3d-printing/blob/master/images/kit-small.png)
  
 
-![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/basic-frame-small.png)
+![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/images/basic-frame-small.png)
  
 
-![mid build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/physical-complete-small.png)
+![mid build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/images/physical-complete-small.png)
  
 
-![finished printer](https://github.com/andruschak/3d-printing/blob/master/finished-small.png)
+![finished printer](https://github.com/andruschak/3d-printing/blob/master/images/finished-small.png)
 
  
 
