@@ -42,12 +42,12 @@ fb group: [Official, Anet, A8R 3D printer Support Group (Inc RepRap Prusa i3 clo
 
 Few sites for models:
 
-Thingiverse: [Thingiverse (ensure it has some build counts and a pic)](https://www.thingiverse.com/)
+Thingiverse (ensure it has some build counts and a pic): [Thingiverse](https://www.thingiverse.com/)
 
-MyMiniFactory: [MyMiniFactory (currated with a lot more detailed models)](https://www.myminifactory.com)
+MyMiniFactor y(currated with a lot more detailed models): [MyMiniFactory](https://www.myminifactory.com)
 
 
- 
+ ------
 
 # Building
 
@@ -99,6 +99,7 @@ Admittedly still new to this. The hotbed came pre-tapped from the factory and I 
 
 The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
 
+------
  
 # Printing
 
@@ -129,19 +130,23 @@ Width | 8
 I will upload more as I go.
 
 ![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
+
 360 cooling to replace stock fan extruder blower
 
 ![pen holder for 2D plotting](https://github.com/andruschak/3d-printing/blob/master/images/finished-pen-holder-small.png)
+
 Little more complex - pen holder to convert the printer to a 2D plotter. Quality has improved since first couple prints, tweaking software settings
 
 ![T bracket mod](https://github.com/andruschak/3d-printing/blob/master/images/finished-t-small.png)
+
 Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
 
 [![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
+
 Timelapse video of T brack build
 
 
-----------------------
+------
 
 # Software
 
@@ -155,9 +160,11 @@ Cura - quick and easy out of the box. Running in Win10.
 
 ### 3d Model Creation
 Google Sketchup - Ive used this in other projects. Pretty good and free
+
 [Google Sketchup:](https://www.sketchup.com/)
 
 Fusion 360 - havent read much into it yet. Suppose to be complete and free - with learning curve
+
 [Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators)
 
 
