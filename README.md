@@ -26,26 +26,29 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 - [ ] Metal Frame 
 - [ ] Dual Extruder (can be used to make dissolvable support structures)
 
-The A8 
+The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity can be solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (skynet 3D firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
 
 
 ### Resources
 
 Yuge list of resources for the A8:
 
-wiki: [3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
-
+[3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
 
 I'm not a facebook guy but this is a great group to lurk on:
 
-fb group: [Official, Anet, A8R 3D printer Support Group (Inc RepRap Prusa i3 clones)](https://www.facebook.com/groups/1068531466501015)
+[Official, Anet, A8R 3D printer Support Group (Inc RepRap Prusa i3 clones)](https://www.facebook.com/groups/1068531466501015)
+
+Good write up on steps for after build:
+
+[Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/)
 
 
-Few sites for models:
+###### Few sites for models:
 
-Thingiverse (ensure it has some build counts and a pic): [Thingiverse](https://www.thingiverse.com/)
+[Thingiverse](https://www.thingiverse.com/) - word of caution - ensure it has some build counts and a pic
 
-MyMiniFactor y(currated with a lot more detailed models): [MyMiniFactory](https://www.myminifactory.com)
+[MyMiniFactory](https://www.myminifactory.com) - currated list of builds
 
 
  ------
@@ -126,6 +129,17 @@ Support | Y
 Adhesion | Brim
 Width | 8
 
+
+## Upgrade Prints
+
+![Anet A8 Prusa i3 Simple filament guide (Horizontal)](https://www.thingiverse.com/thing:1764285)
+
+![Hesine M-505, Anet A8 - Center Nozzle Fan](https://www.thingiverse.com/thing:1620630)
+
+![Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
+
+![Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
+
 ## Example prints
 
 I will upload more as I go.
@@ -154,19 +168,16 @@ Timelapse video of T brack build
 There are a ton of packages out there you can use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cura came highly recommended. 
 
 ### Slicers
-Cura - quick and easy out of the box. Running in Win10.
-[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software)
+
+[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software): quick and easy out of the box. Running in Win10.
 
 
 
 ### 3d Model Creation
-Google Sketchup - Ive used this in other projects. Pretty good and free
 
-[Google Sketchup:](https://www.sketchup.com/)
+[Google Sketchup:](https://www.sketchup.com/): Ive used this in other projects. Pretty good and free.
 
-Fusion 360 - havent read much into it yet. Suppose to be complete and free - with learning curve
-
-[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators)
+[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators): havent read much into it yet. Suppose to be complete and free - with learning curve
 
 
  
@@ -176,7 +187,6 @@ Next steps
 
 - [ ] Highlevel gcode information
 - [ ] Write up on 2D plotting
-- [ ] Support structure mods
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
 - [ ] Flash firmware to Marlin (Skynet 3D)
 - [ ] Build octoprint box from rpi
