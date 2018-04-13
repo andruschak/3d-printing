@@ -96,12 +96,28 @@ Also, I found when using a piece of A4 paper to calibrate, I got best results wh
 
 I left the 4 corners of the bed about 1/2 way tightened. Many said to tighten all the way down to start, but I found I had to drop the bed in order to get the right height, so it took a couple retries. Make sure to tighten the wingnuts snug before printing - I had 1/2 a side come loose after a print and throw my calibration out of whack.
 
-### Adhesion
 
-Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
+------
+
+# Software
+
+There are a ton of packages out there you can use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cura came highly recommended. It was quite easy to pick up and learn. The printer cannot handle .stl files directly, so cura is needed to generate a gcode file (more on these later).
+
+### Slicers
+
+[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
+
+![Cura screenshot with settings](https://github.com/andruschak/3d-printing/blob/master/images/360-cooler.png)
 
 
-The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
+### 3d Model Creation
+
+I hope to start creating my own models shortly, the in mean time, here are a few links.
+
+[Google Sketchup:](https://www.sketchup.com/) Ive used this in other projects. Pretty good and free.
+
+[Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
+
 
 ------
  
@@ -129,6 +145,13 @@ Support | Y
 Adhesion | Brim
 Width | 8
 
+### Adhesion
+
+Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
+
+
+The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
+
 
 ## Upgrade Prints
 
@@ -146,7 +169,7 @@ I will upload more as I go.
 
 ![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
 
-360 cooling to replace stock fan extruder blower
+360 cooling to replace stock fan extruder blower. As seen in Cura screenshot above.
 
 ![pen holder for 2D plotting](https://github.com/andruschak/3d-printing/blob/master/images/finished-pen-holder-small.png)
 
@@ -163,26 +186,6 @@ Timelapse video of T bracket build
 
 ------
 
-# Software
-
-There are a ton of packages out there you can use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cura came highly recommended. 
-
-### Slicers
-
-[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
-
-![Cura screenshot with settings](https://github.com/andruschak/3d-printing/blob/master/images/360-cooler.png)
-
-
-### 3d Model Creation
-
-[Google Sketchup:](https://www.sketchup.com/) Ive used this in other projects. Pretty good and free.
-
-[Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
-
-
- 
-------
 
 Next steps
 
