@@ -4,7 +4,10 @@ First foray into 3D Printing - document is a work in progress
 
 
 I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project.
- 
+
+
+
+
 
 ### Printer Criteria:
 
@@ -29,14 +32,20 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 
 Yuge list of resources for the A8:
 
-wiki: https://3dprint.wiki/reprap/anet/a8
+wiki: [3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
 
 
 I'm not a facebook guy but this is a great group to lurk on:
 
-fb group: https://www.facebook.com/groups/1068531466501015
+fb group: [Official, Anet, A8R 3D printer Support Group (Inc RepRap Prusa i3 clones)](https://www.facebook.com/groups/1068531466501015)
 
- 
+
+Few sites for models:
+
+Thingiverse: [Thingiverse (ensure it has some build counts and a pic)](https://www.thingiverse.com/)
+
+MyMiniFactory: [MyMiniFactory (currated with a lot more detailed models)](https://www.myminifactory.com)
+
 
  
 
@@ -93,6 +102,32 @@ The first prints confused me a bit as it was creating a dummy layer around the b
  
 # Printing
 
+### Anet A8 settings
+
+This is close to the defaults that came with Cura under draft quality. For simple prints it has been excellent. The temps were what the machine was set to by default (200F/60F).
+
+I am currently trying a more complex build to see how to holds up. Watch the "support" check. It will auto generate supports for overhangs. Printing my first support in aforementioned complex build. You can view the layers by selecting the object and the layers button.
+
+Name   | Setting
+------------ | -------------
+Layer Height | 0.2
+Wall Thickness | 0.8
+Infill | 20
+Print Temp | 200
+Build Plate Temp | 60
+Diameter | 1.75mm
+Flow | 100
+Speed | 60
+Travel | 120
+Cooling | Y
+Support | Y
+Adhesion | Brim
+Width | 8
+
+## Example prints
+
+I will upload more as I go.
+
 ![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
 360 cooling to replace stock fan extruder blower
 
@@ -102,20 +137,29 @@ Little more complex - pen holder to convert the printer to a 2D plotter. Quality
 ![T bracket mod](https://github.com/andruschak/3d-printing/blob/master/images/finished-t-small.png)
 Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
 
+[![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
+Timelapse video of T brack build
+
+
 ----------------------
 
-# WIP
- 
 # Software
 
-There are a ton of packages out there you an use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cure came highly recommended. Although I wouldnt mind trying a few others.
+There are a ton of packages out there you can use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cura came highly recommended. 
 
-Ultimaker cura: https://ultimaker.com/en/products/ultimaker-cura-software
+### Slicers
+Cura - quick and easy out of the box. Running in Win10.
+[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software)
 
 
-Anet A8 settings
 
-- Table of tried settings and pics of prints with those settings?
+### 3d Model Creation
+Google Sketchup - Ive used this in other projects. Pretty good and free
+[Google Sketchup:](https://www.sketchup.com/)
+
+Fusion 360 - havent read much into it yet. Suppose to be complete and free - with learning curve
+[Fusion 360](https://www.autodesk.com/products/fusion-360/students-teachers-educators)
+
 
  
 
