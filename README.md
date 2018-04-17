@@ -107,6 +107,18 @@ There are a ton of packages out there you can use. For quick results I wanted to
 
 [Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
 
+I must say after spending a couple hours using Cura I am pretty happy with its balance of features vs usability. It took a little while to get used to the interface (it looks to have gone through GUI change recently making many old posts obsolete). 
+
+Setup was easy. Install and run. It prompted for a default printer (I picked Pruse i3 clone) but still had to go into the device and modify the bed size parameters.  
+
+Loading models was easy as well. Open the .stl file and it will import into the application. It also auto detected the SDcard and prompted to save and eject (its the little things!)
+
+Pay particular attention to the settings on the right hand side. You can see mine attached. Note there is a section for "generating support". This instructs the printer to build disposable support structures. 
+
+A cool feature is enabling the layers view, selecting a specific layer and watching it simulate the print. 
+
+It also has usb support for hooking directly to your printer but I havent tried that.
+
 ![Cura screenshot with settings](https://github.com/andruschak/3d-printing/blob/master/images/360-cooler.png)
 
 
@@ -114,7 +126,7 @@ There are a ton of packages out there you can use. For quick results I wanted to
 
 I hope to start creating my own models shortly, the in mean time, here are a few links.
 
-[Google Sketchup:](https://www.sketchup.com/) Ive used this in other projects. Pretty good and free.
+[Sketchup:](https://www.sketchup.com/) Formally Google Sketchup. Ive used this in other projects. Pretty good and free.
 
 [Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
 
@@ -179,9 +191,15 @@ Little more complex - pen holder to convert the printer to a 2D plotter. Quality
 
 Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
 
+##### Timelapse Video
 [![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
 
 Timelapse video of T bracket build
+
+
+##### Print evolution
+
+Same part, many tweaks. Show the 2nd print and the 8th print.
 
 
 ------
