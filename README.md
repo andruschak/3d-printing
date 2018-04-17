@@ -199,7 +199,7 @@ Timelapse video of T bracket build
 
 ##### Print evolution
 
-Same part, many tweaks. Show the 2nd print and the 8th print.
+Same part, many tweaks. Show the 2nd print and the 8th print. Maybe the alien prints?
 
 
 ------
