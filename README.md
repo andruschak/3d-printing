@@ -161,8 +161,10 @@ Width | 8
 
 Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
 
-
 The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
+
+I did end up getting a glass plate with binder clips to try. Honestly though, the taping setup (its cheap and not too much of a pain) is working fine. Adhesion is good and removal fairly painless (worst case it mungs up the tape job).
+
 
 
 ## Upgrade Prints
@@ -203,6 +205,29 @@ Same part, many tweaks. Show the 2nd print and the 8th print. Maybe the alien pr
 
 
 ------
+
+### The build continues
+
+I think by now, i've probably got around 20h of print time under my belt. Now that I have gotten to know the system fairly well. 
+
+There is a lot of buzz on the Internet regarding this machine. 
+
+### Safety
+
+
+Upgrade firmware 
+- to enable thermal runover protection
+
+Secure moving cables 
+- to prevent movement fatigue
+
+Isolate Heatbed via MOSFET
+
+
+Replace the PSU
+
+
+
 
 
 Next steps
