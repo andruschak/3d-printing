@@ -90,12 +90,15 @@ The finished printer
 
 ### Initial Configuration and Leveling
 
-This took a bit of experimenting. My kit came with an auto-leveling sensor which I didn't install until after my first couple prints. At first, I did not realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
+I wanted to use the default firmware for the first few prints to make sure it would work as expected. This took a bit of experimenting. My kit came with an auto-leveling sensor which I didn't install until after my first couple prints. At first, I did not realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
+
+The default firmware had an auto-level menu selection. This would move the nozzle to the lf, rf, rb, lb allowing you to tweak the paper drag under each test point.
 
 Also, I found when using a piece of A4 paper to calibrate, I got best results when it was a light drag on the paper vs a heavy press.
 
 I left the 4 corners of the bed about 1/2 way tightened. Many said to tighten all the way down to start, but I found I had to drop the bed in order to get the right height, so it took a couple retries. Make sure to tighten the wingnuts snug before printing - I had 1/2 a side come loose after a print and throw my calibration out of whack.
 
+Updated below: Initial Configuration and Leveling of the Firmware update section
 
 ------
 
@@ -161,11 +164,23 @@ Width | 8
 
 Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
 
-The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim".
+The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim". If you have issues with the brim layer it is likely your bed laying or z-offset is out of whack (lessons learned!)
 
-I did end up getting a glass plate with binder clips to try. Honestly though, the taping setup (its cheap and not too much of a pain) is working fine. Adhesion is good and removal fairly painless (worst case it mungs up the tape job).
+I did end up getting a glass plate with binder clips to try. But I am not sure how well the inductive sensor will work having a glass buffer before the bed (may require a sensor swap). Honestly though, the taping setup (its cheap and not too much of a pain) is working fine. Adhesion is good and removal fairly painless (worst case it mungs up the tape job).
 
+### Notes on filament
 
+I knew it wouldnt take long until I ran out of the small roll of white PLA (25m ?) that came with the printer. I did manage to build a 360 cooling blower, 2 T brackets, a pen holder and a heart shaped trinket for the Mrs. Overall, I must say, I am pleasantly surprised at the ratio of print to raw material put in.
+
+For starters I am mainly interested in PLA. Truth by told, I havent done a ton of research on the different types of printable material out there. According to the wiki, this printer supports a pretty wide range - ABS/PLA/TPU/Wood/Nylon/PVA/PP/Luminescent.
+
+PLA doesn't have much of a smell which is nice. 
+
+For replacement, I picked up a couple 1kg rolls of AMZ3D PLA in orange and black. They get decent reviews online and have come recommended by a few friends so I thought I would give it a try. Came to about 25$ with shipping for each roll.
+
+Changing the filament was pretty simple. There are a few different methods. I enabled PLA preheat to get it up to the melting point, cut the old filament flush with the entrance to the extruder, cut a point on the end of the new spool, and started to push a bit. Once in a bit I used the menu stepper control to feed it though. Once the white turned black it was good to go. I didnt take off the front mount fan. I have heard it can be a pain in the ass but seemed to work for me.
+
+Just to note, there are many different ways advocated on the net. Some take off the fan, just push it through, some pull it out (though it can get cool and stuck forcing you to take things apart).
 
 ## Upgrade Prints
 
@@ -176,6 +191,8 @@ I did end up getting a glass plate with binder clips to try. Honestly though, th
 [Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
 [Anet A8 T corner](https://www.thingiverse.com/thing:1672959)
+
+[Heatbed Cable Holder for Anet A8](https://www.thingiverse.com/thing:1875869)
 
 ## Example prints
 
