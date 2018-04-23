@@ -3,7 +3,7 @@
 First foray into 3D Printing - document is a work in progress
 
 
-I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project.
+I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project. Of course YMMV and I take no responsibility for anything that happens.
 
 
 ## Part 1. From box to build
@@ -25,7 +25,7 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 - [ ] Metal Frame 
 - [ ] Dual Extruder (can be used to make dissolvable support structures)
 
-The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity can be solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (skynet 3D firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
+The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity can be solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (Marlin firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
 
 
 ### Resources
@@ -224,29 +224,59 @@ Same part, many tweaks. Show the 2nd print and the 8th print. Maybe the alien pr
 
 ## Part 2: The build continues
 
-I think by now, i've probably got around 25h of print time under my belt. Now that I have gotten to know the system fairly well, it is time to start all over with a new firmware and updated settings.
-
-Famous last worlds...
+After 25h or so of printing, I have gotten to know the basics fairly well. What better time to start over with a new firmware and updated settings? This process was pretty straight forward though there are many possible pitfalls. 
 
 ### Safety
 
 There is a lot of buzz on the Internet regarding this machine and it's potential hazards. It is highly recommended by the online community to perform some upgrades.
 
-#### Software
-Upgrade firmware 
-- to enable thermal runover protection
-
 #### Hardware
 
-Secure moving cables 
-- to prevent movement fatigue
+Secure moving cables to prevent movement fatigue on the connectors to the bed and extruder. 
+
+Picture of the bed
+
+Picture of the extruder
 
 Isolate Heatbed via MOSFET
 
 
-Replace the PSU
+#### Software
+
+Upgrade firmware - Marlin 1.1.8 (at time of writing)
+
+There are some reasons for upgrading:
+
+- to enable thermal runover protection 
+- auto-leveling support
+- you want a garbled LCD display (seems to be a bug)
 
 
+There are good resources on how to do this. Apparently you can use a native framwork to configure and upload. I went the arduino path as I have a lot of experience in that space. Here are the highlevel steps I followed:
+
+- Download arduino software
+- Download Skynet 3D drivers (for arduino hardware plugin)
+- Download Marlin 1.1.8
+- Unzip em all
+- Copy Skynet "hardware" folder into your user dir
+- Copy Marlin example for anet a8 configuration.h and configuration_adv.h to root Marlin folder and overwrite the existing files
+- Fire up the Marlin.ino file and edit on of the files you just copied in the arduino IDE
+
+
+- Edit Configuration.h
+
+There were many tweaks I had to make here in order to accomodate for placement of the z-axis sensor and bed cable bracket. Tons of experiemental compenants are commented out - printing chocolate or driving LED lights. Make sure you go through this file and understand what it is doing or you can end up doing nasty things to your printer.
+
+
+- Connect the printer to the computer via usb
+- Select the Anet 1.0 board
+- Select the proper comm port
+- Click the "->" to compile and upload to the printer
+- The printer will reboot and you're good to go!
+
+There are a few differences in this firmware compared to stock. The button selections have changed, center is menu and ok for example.
+
+#### LCD garbling
 
 ------
 
@@ -256,5 +286,5 @@ Next steps
 - [ ] Highlevel gcode information
 - [ ] Write up on 2D plotting
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
-- [ ] Flash firmware to Marlin (Skynet 3D)
+- [ ] Flash firmware to Marlin (Skynet 3D is obsolete)
 - [ ] Build octoprint box from rpi
