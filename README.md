@@ -6,8 +6,7 @@ First foray into 3D Printing - document is a work in progress
 I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project.
 
 
-
-
+## Part 1. From box to build
 
 ### Printer Criteria:
 
@@ -223,17 +222,21 @@ Same part, many tweaks. Show the 2nd print and the 8th print. Maybe the alien pr
 
 ------
 
-### The build continues
+## Part 2: The build continues
 
-I think by now, i've probably got around 20h of print time under my belt. Now that I have gotten to know the system fairly well. 
+I think by now, i've probably got around 25h of print time under my belt. Now that I have gotten to know the system fairly well, it is time to start all over with a new firmware and updated settings.
 
-There is a lot of buzz on the Internet regarding this machine. 
+Famous last worlds...
 
 ### Safety
 
+There is a lot of buzz on the Internet regarding this machine and it's potential hazards. It is highly recommended by the online community to perform some upgrades.
 
+#### Software
 Upgrade firmware 
 - to enable thermal runover protection
+
+#### Hardware
 
 Secure moving cables 
 - to prevent movement fatigue
