@@ -280,35 +280,61 @@ There are a few differences in this firmware compared to stock. The button selec
 
 ##### Configuration.h file
 
-*** Make sure you go through this file and understand what it is doing or you can end up doing nasty things to your printer. ***
+*** Make sure you go through this file and understand what it is doing or you can end up doing nasty things! ***
 
 // increased the jerk rate by 10 (original 10)
+
 define DEFAULT_XJERK                 20.0
+
 define DEFAULT_YJERK                 20.0
+
 define DEFAULT_ZJERK                  0.3
+
 define DEFAULT_EJERK                  5.0
 
+
 // replaces the default Z-Axis (expects same pin)
+
 define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
+
+
 // enable fixed probe – mine is inductive
+
 define FIX_MOUNTED_PROBE
 
+
+
 // set the location of the probe in relation to the Nozzle (off the back of the extruder module – from wiki)
+
 define X_PROBE_OFFSET_FROM_EXTRUDER 15   // X offset: -left  +right  [of the nozzle]
+
 define Y_PROBE_OFFSET_FROM_EXTRUDER 55   // Y offset: -front +behind [the nozzle]
+
 define Z_PROBE_OFFSET_FROM_EXTRUDER 1   // Z offset: -below +above  [the nozzle]
 
+
+
 // bed leveling algorithm – 9-point touch
+
 define AUTO_BED_LEVELING_BILINEAR
 
+
+
 // modified the 9 point touch to not hit the printed bed cable holder
+
 define LEFT_PROBE_BED_POSITION 15
+
 define RIGHT_PROBE_BED_POSITION 190
+
 define FRONT_PROBE_BED_POSITION 45
+
 define BACK_PROBE_BED_POSITION 160
 
+
+
 // in case you’re off the bed and there is no metal for the sensor to sense
+
 define Z_SAFE_HOMING
 
 
@@ -330,14 +356,50 @@ Setting the pre/post gcode (moving the bed out and the extruder up at the end!)
 
 Exporting
 
+------
+
+### Octoprint
+
+Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser.
+
+It offers a ton of great features:
+
+- Open source (fits our conditions above)
+- RPI image
+- Web interface
+- Full print control
+- Video Streaming/Timelapse (keep an eye on the printer when out of the room!)
+- Slicing on box
+- Plug-ins (stats, history, push notifications, etc..)
+- Custom UI scripts (turn on/off, control LEDs, others?)
+- Custom touch screen support
+
+Here is the highlevel steps I used (took 15mins):
+
+- Download octopi (0.14 at time of writing)
+- Flash using Etcher
+- Edit the octopi-network.txt file, uncomment and add your wifi information
+- Boot up rpi with camera
+- Log into web interface
+- Follow wizard (assigning proper values)
+- Connect the usb and test
+- Print!
+
+So far I am very impressed with the Octoprint. It adds a whole new dimension to the experience. 
+
+Screenshot
+
+Screenshot
+
+Screenshot
 
 ------
 
-Next steps
+## Next steps
 
-- [ ] Safety upgrades
+- [-] Safety upgrades
 - [ ] Highlevel gcode information
 - [ ] Write up on 2D plotting
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
 - [ ] Flash firmware to Marlin (Skynet 3D is obsolete)
-- [ ] Build octoprint box from rpi
+- [-] Build octoprint box from rpi
