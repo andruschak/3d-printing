@@ -85,6 +85,9 @@ Physical is complete, onto electronics
 The finished printer
  
 
+### Garbled LCD
+
+The LCD ribbon isnt sheilded and initially I encountered issues with garbled characters. Moving the bed and extruder cabling away from the ribbon solved the issue.
  
 
 ### Initial Configuration and Leveling
@@ -228,9 +231,9 @@ After 25h or so of printing, I have gotten to know the basics fairly well. What 
 
 ### Safety
 
-There is a lot of buzz on the Internet regarding this machine and it's potential hazards. It is highly recommended by the online community to perform some upgrades.
+There is a lot of buzz on the Internet regarding this machine and it's potential hazards. It is highly recommended by the online community to perform some upgrades. I will cover, securing cabling for the hotbed and extruder, installing a mosfet and flashing the firmware.
 
-#### Hardware
+##### Hardware
 
 Secure moving cables to prevent movement fatigue on the connectors to the bed and extruder. 
 
@@ -241,33 +244,32 @@ Picture of the extruder
 Isolate Heatbed via MOSFET
 
 
-#### Software
+##### Software
 
 Upgrade firmware - Marlin 1.1.8 (at time of writing)
 
 There are some reasons for upgrading:
 
-- to enable thermal runover protection 
-- auto-leveling support
+- to enable thermal runaway protection 
+- (better) auto-leveling support - my original a8 firmware had some sensor support (4 point)
+- control of features and menu items
+- review the code yourself
 - you want a garbled LCD display (seems to be a bug)
 
 
-There are good resources on how to do this. Apparently you can use a native framwork to configure and upload. I went the arduino path as I have a lot of experience in that space. Here are the highlevel steps I followed:
+There are good resources on how to do the install. Apparently you can use a native framwork (platform.io?) to configure and upload. I went the arduino path as I have a lot of experience in that space. Pay special attention to the settings in configuration.h - there were many tweaks I had to make here in order to accomodate for placement of the z-axis sensor and bed cable bracket. There are tons of experiemental componants commented out - like printing chocolate or driving LED lights!
+
+Here are the highlevel steps I followed:
 
 - Download arduino software
 - Download Skynet 3D drivers (for arduino hardware plugin)
 - Download Marlin 1.1.8
 - Unzip em all
-- Copy Skynet "hardware" folder into your user dir
+- install arduino
+- Copy Skynet "hardware" folder into your arduino user dir
 - Copy Marlin example for anet a8 configuration.h and configuration_adv.h to root Marlin folder and overwrite the existing files
 - Fire up the Marlin.ino file and edit on of the files you just copied in the arduino IDE
-
-
-- Edit Configuration.h
-
-There were many tweaks I had to make here in order to accomodate for placement of the z-axis sensor and bed cable bracket. Tons of experiemental compenants are commented out - printing chocolate or driving LED lights. Make sure you go through this file and understand what it is doing or you can end up doing nasty things to your printer.
-
-
+- Edit Configuration.h - see below
 - Connect the printer to the computer via usb
 - Select the Anet 1.0 board
 - Select the proper comm port
@@ -276,7 +278,58 @@ There were many tweaks I had to make here in order to accomodate for placement o
 
 There are a few differences in this firmware compared to stock. The button selections have changed, center is menu and ok for example.
 
-#### LCD garbling
+##### Configuration.h file
+
+*** Make sure you go through this file and understand what it is doing or you can end up doing nasty things to your printer. ***
+
+// increased the jerk rate by 10 (original 10)
+define DEFAULT_XJERK                 20.0
+define DEFAULT_YJERK                 20.0
+define DEFAULT_ZJERK                  0.3
+define DEFAULT_EJERK                  5.0
+
+// replaces the default Z-Axis (expects same pin)
+define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+
+// enable fixed probe – mine is inductive
+define FIX_MOUNTED_PROBE
+
+// set the location of the probe in relation to the Nozzle (off the back of the extruder module – from wiki)
+define X_PROBE_OFFSET_FROM_EXTRUDER 15   // X offset: -left  +right  [of the nozzle]
+define Y_PROBE_OFFSET_FROM_EXTRUDER 55   // Y offset: -front +behind [the nozzle]
+define Z_PROBE_OFFSET_FROM_EXTRUDER 1   // Z offset: -below +above  [the nozzle]
+
+// bed leveling algorithm – 9-point touch
+define AUTO_BED_LEVELING_BILINEAR
+
+// modified the 9 point touch to not hit the printed bed cable holder
+define LEFT_PROBE_BED_POSITION 15
+define RIGHT_PROBE_BED_POSITION 190
+define FRONT_PROBE_BED_POSITION 45
+define BACK_PROBE_BED_POSITION 160
+
+// in case you’re off the bed and there is no metal for the sensor to sense
+define Z_SAFE_HOMING
+
+
+##### LCD garbling
+
+Deja Vu - a garbled LCD - didn't we talk about this earlier?
+
+Well, it appears to be an issue with the A8 LCD and the Marlin software. Some comments seem to indicate a problem with the arduino refresh rates and the A8 setup. Others talk about interference. It seems hit or miss in my experience, however, it happens during more prints. It is possible to click right-right-menu-menu to have it reset without impact to the print process. I am going to try and sheild the cable to see if that helps.
+
+In the meantime, I hope it is something fixed in software.
+
+### gcode
+
+What it is and how it works
+
+Sample
+
+Setting the pre/post gcode (moving the bed out and the extruder up at the end!)
+
+Exporting
+
 
 ------
 
