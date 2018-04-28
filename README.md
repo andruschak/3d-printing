@@ -282,6 +282,7 @@ There are a few differences in this firmware compared to stock. The button selec
 
 *** Make sure you go through this file and understand what it is doing or you can end up doing nasty things! ***
 
+```
 // increased the jerk rate by 10 (original 10)
 
 define DEFAULT_XJERK                 20.0
@@ -336,7 +337,7 @@ define BACK_PROBE_BED_POSITION 160
 // in case you’re off the bed and there is no metal for the sensor to sense
 
 define Z_SAFE_HOMING
-
+```
 
 ##### LCD garbling
 
