@@ -284,60 +284,36 @@ There are a few differences in this firmware compared to stock. The button selec
 
 ```
 // increased the jerk rate by 10 (original 10)
-
 define DEFAULT_XJERK                 20.0
-
 define DEFAULT_YJERK                 20.0
-
 define DEFAULT_ZJERK                  0.3
-
 define DEFAULT_EJERK                  5.0
 
-
 // replaces the default Z-Axis (expects same pin)
-
 define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
-
-
 // enable fixed probe – mine is inductive
-
 define FIX_MOUNTED_PROBE
 
-
-
 // set the location of the probe in relation to the Nozzle (off the back of the extruder module – from wiki)
-
 define X_PROBE_OFFSET_FROM_EXTRUDER 15   // X offset: -left  +right  [of the nozzle]
-
 define Y_PROBE_OFFSET_FROM_EXTRUDER 55   // Y offset: -front +behind [the nozzle]
-
 define Z_PROBE_OFFSET_FROM_EXTRUDER 1   // Z offset: -below +above  [the nozzle]
 
-
-
 // bed leveling algorithm – 9-point touch
-
 define AUTO_BED_LEVELING_BILINEAR
 
-
-
 // modified the 9 point touch to not hit the printed bed cable holder
-
 define LEFT_PROBE_BED_POSITION 15
-
 define RIGHT_PROBE_BED_POSITION 190
-
 define FRONT_PROBE_BED_POSITION 45
-
 define BACK_PROBE_BED_POSITION 160
 
-
-
 // in case you’re off the bed and there is no metal for the sensor to sense
-
 define Z_SAFE_HOMING
 ```
+
+------
 
 ##### LCD garbling
 
