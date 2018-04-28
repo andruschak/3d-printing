@@ -19,13 +19,13 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 - [x] Open source/community/hackable (big finger to proprietary)
 - [x] Compatible with models from Thingiverse
 - [x] Supports multiple different filament types
-- [ ] Ethernet/Wifi connectivity
-- [ ] Non-fire causing
+- [x] Ethernet/Wifi connectivity
+- [x] Non-fire causing* (precautions taken)
 - [ ] Enclosed 
 - [ ] Metal Frame 
 - [ ] Dual Extruder (can be used to make dissolvable support structures)
 
-The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity can be solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (Marlin firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
+The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity was solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (Marlin firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
 
 
 ### Resources
@@ -166,13 +166,13 @@ Width | 8
 
 Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
 
-The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim". If you have issues with the brim layer it is likely your bed laying or z-offset is out of whack (lessons learned!)
+The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim", and is designed to break off the final print. If you have issues with the brim layer it is likely your bed leveling or z-offset is out of whack (important lessons learned!). You can also select raft or skirt as possible preprint selections. I've never tried raft, but use skirt regularly. My printer seems to have a slight delay in extruding so it gets the filament flowing. I usually end up with only 3/4 of the skirt though.
 
-I did end up getting a glass plate with binder clips to try. But I am not sure how well the inductive sensor will work having a glass buffer before the bed (may require a sensor swap). Honestly though, the taping setup (its cheap and not too much of a pain) is working fine. Adhesion is good and removal fairly painless (worst case it mungs up the tape job).
+I did end up getting a glass plate with binder clips to try. But I am not sure how well the inductive sensor will work having a glass buffer before the bed (may require a sensor swap). Honestly though, the taping setup is cheap and is working fine. Adhesion is good and removal fairly painless. The worst case is a munged up tape job. The only downside to the tape so far is that it results in a less than perfect print face because of the tape lines on the bed. 
 
 ### Notes on filament
 
-I knew it wouldnt take long until I ran out of the small roll of white PLA (25m ?) that came with the printer. I did manage to build a 360 cooling blower, 2 T brackets, a pen holder and a heart shaped trinket for the Mrs. Overall, I must say, I am pleasantly surprised at the ratio of print to raw material put in.
+I knew it wouldn't take long until I ran out of the small roll of white PLA (25m ?) that came with the printer. However, it produced a 360 cooling blower, 2 T brackets, a pen holder and a heart shaped trinket for the Mrs. Overall, I must say, I am pleasantly surprised at the ratio of print to raw material put in.
 
 For starters I am mainly interested in PLA. Truth by told, I havent done a ton of research on the different types of printable material out there. According to the wiki, this printer supports a pretty wide range - ABS/PLA/TPU/Wood/Nylon/PVA/PP/Luminescent.
 
@@ -180,11 +180,13 @@ PLA doesn't have much of a smell which is nice.
 
 For replacement, I picked up a couple 1kg rolls of AMZ3D PLA in orange and black. They get decent reviews online and have come recommended by a few friends so I thought I would give it a try. Came to about 25$ with shipping for each roll.
 
-Changing the filament was pretty simple. There are a few different methods. I enabled PLA preheat to get it up to the melting point, cut the old filament flush with the entrance to the extruder, cut a point on the end of the new spool, and started to push a bit. Once in a bit I used the menu stepper control to feed it though. Once the white turned black it was good to go. I didnt take off the front mount fan. I have heard it can be a pain in the ass but seemed to work for me.
+Changing the filament was pretty simple. There are a few different methods. I enabled PLA preheat to get it up to the melting point, cut the old filament flush with the entrance to the extruder, cut a point on the end of the new spool, and started to push a bit. Once it bit I used the menu stepper control to feed it though, voila, the white turned black and it was good to go. I didn't end up taking off the front mount fan. I have heard it can be a pain in the ass but the previous method seemed to work for me.
 
 Just to note, there are many different ways advocated on the net. Some take off the fan, just push it through, some pull it out (though it can get cool and stuck forcing you to take things apart).
 
 ## Upgrade Prints
+
+[Anet A8 T corner](https://www.thingiverse.com/thing:1672959)
 
 [Anet A8 Prusa i3 Simple filament guide (Horizontal)](https://www.thingiverse.com/thing:1764285)
 
@@ -192,9 +194,9 @@ Just to note, there are many different ways advocated on the net. Some take off 
 
 [Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
-[Anet A8 T corner](https://www.thingiverse.com/thing:1672959)
-
 [Heatbed Cable Holder for Anet A8](https://www.thingiverse.com/thing:1875869)
+
+[AMZ3D PLA spool hub](https://www.thingiverse.com/thing:1955324)
 
 ## Example prints
 
@@ -325,13 +327,49 @@ In the meantime, I hope it is something fixed in software.
 
 ### gcode
 
-What it is and how it works
+gcode is a machine instruction language. Through a series of "codes", instructions are sent to machines to perform certain tasks. In the case of 3D printing it tells the printer how to create each layer. The gcode file is plain-text and is generated by Cura (or other software) after slicing.
 
-Sample
+Additional gcode commands link
 
-Setting the pre/post gcode (moving the bed out and the extruder up at the end!)
+Here is a sample cura file with comments:
 
-Exporting
+```
+;FLAVOR:Marlin
+;TIME:9769
+;Filament used: 11.6661m
+;Layer height: 0.2
+;Generated with Cura_SteamEngine 3.2.1
+M190 S60
+M104 S200
+M109 S200
+M82 ;absolute extrusion mode
+G21 ;metric values
+G90 ;absolute positioning
+M82 ;set extruder to absolute mode
+M107 ;start with the fan off
+G28 X0 Y0 ;move X/Y to min endstops
+G28 Z0 ;move Z to min endstops
+G1 Z15.0 F9000 ;move the platform down 15mm
+G92 E0 ;zero the extruded length
+G1 F200 E3 ;extrude 3mm of feed stock
+G92 E0 ;zero the extruded length again
+G1 F9000
+;Put printing message on LCD screen
+M117 Printing...
+;LAYER_COUNT:199
+;LAYER:0
+M107
+G0 F3000 X62.137 Y58.904 Z0.3
+;TYPE:SKIRT
+G1 F1800 X62.574 Y58.466 E0.03087
+G1 X64.341 Y57.007 E0.14519
+G1 X64.673 Y56.767 E0.16563
+G1 X65.478 Y56.26 E0.21309
+```
+
+##### Pre/Post gcode
+
+Sample post - move bed out instead of in. 
 
 ------
 
@@ -380,3 +418,11 @@ Screenshot
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
 - [ ] Flash firmware to Marlin (Skynet 3D is obsolete)
 - [-] Build octoprint box from rpi
+
+
+## Prints
+
+##### Articulating butterfly
+
+
+##### Batman headphone stand
