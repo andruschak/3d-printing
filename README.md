@@ -42,6 +42,11 @@ Good write up on steps for after build:
 
 [Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/)
 
+Another decent write up, this time as a top 25:
+
+[25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/)
+
+
 
 ###### Few sites for models:
 
@@ -183,6 +188,12 @@ For replacement, I picked up a couple 1kg rolls of AMZ3D PLA in orange and black
 Changing the filament was pretty simple. There are a few different methods. I enabled PLA preheat to get it up to the melting point, cut the old filament flush with the entrance to the extruder, cut a point on the end of the new spool, and started to push a bit. Once it bit I used the menu stepper control to feed it though, voila, the white turned black and it was good to go. I didn't end up taking off the front mount fan. I have heard it can be a pain in the ass but the previous method seemed to work for me.
 
 Just to note, there are many different ways advocated on the net. Some take off the fan, just push it through, some pull it out (though it can get cool and stuck forcing you to take things apart).
+
+### Support or no support?
+
+This really depends on what you're printing. I've found if I can get away without supports it is better - especially when you want parts to slot together.
+
+If the area is super tight it can be very hard to pull out the small breakaway parts. 
 
 ## Upgrade Prints
 
@@ -375,14 +386,13 @@ Sample post - move bed out instead of in.
 
 ### Octoprint
 
-Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser.
+Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser. One thing to note is the webcam is viewable without logging in.
 
 It offers a ton of great features:
 
 - Open source (fits our conditions above)
 - RPI image
-- Web interface
-- Full print control
+- Full print control via web interface
 - Video Streaming/Timelapse (keep an eye on the printer when out of the room!)
 - Slicing on box
 - Plug-ins (stats, history, push notifications, etc..)
@@ -400,7 +410,9 @@ Here is the highlevel steps I used (took 15mins):
 - Connect the usb and test
 - Print!
 
-So far I am very impressed with the Octoprint. It adds a whole new dimension to the experience. 
+So far I am very impressed with the Octoprint and would recommend giving it a try. It adds a whole new dimension to the experience. Being able to watch the feed from anywhere is nice. 
+
+Previously I was slicing on the PC and using the SD card (which worked well). I am still using the PC for slicing but drag/dropping to the web interface.
 
 Screenshot
 
