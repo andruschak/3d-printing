@@ -408,6 +408,28 @@ Screenshot
 
 Screenshot
 
+##### Octoprint API
+
+I've been looking to pull some stats out of octoprint to display on a micro-phat. I was able to pull basic info with curl. 
+
+...
+curl -i -k -H "Content-Type: application/json" -H "x-api-key:XXXXXXXXXXXXXXXXXXXXXXXXXX" -X GET https://octoprint.local/api/version
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 40
+Cache-Control: max-age=0
+X-Clacks-Overhead: GNU Terry Pratchett
+Set-Cookie: session_P443=.eJyrVopPK0otzlCyKikqTdVRis9MUbKqVlJIUrJSisryy_B38cr2zY009qtKNvTNda3yD4-sjMrKyYhyCS2Pcg_L8DVyNfAP8bVVqtVRykxJzSvJLKnUSywtyYgvqSxIVbLKK83JQZJBMj3CyK0  8MdAWrLO0OLUoHqtcLQDapDRp.DdO2eA.C7_ZDuNHEctv78qnk8vYHpv3KcY; Path=/; HttpOnly
+X-Robots-Tag: noindex, nofollow, noimageindex
+
+{
+  "api": "0.1",
+  "server": "1.3.8"
+}
+...
+
+
 ------
 
 ## Next steps
