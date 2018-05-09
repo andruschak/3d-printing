@@ -424,7 +424,7 @@ Screenshot
 
 I've been looking to pull some stats out of octoprint to display on a micro-phat. I was able to pull basic info with curl. 
 
-...
+```
 curl -i -k -H "Content-Type: application/json" -H "x-api-key:XXXXXXXXXXXXXXXXXXXXXXXXXX" -X GET https://octoprint.local/api/version
 
 HTTP/1.1 200 OK
@@ -439,7 +439,7 @@ X-Robots-Tag: noindex, nofollow, noimageindex
   "api": "0.1",
   "server": "1.3.8"
 }
-...
+```
 
 
 ------
