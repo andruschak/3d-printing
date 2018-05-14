@@ -19,33 +19,31 @@ I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but 
 - [x] Open source/community/hackable (big finger to proprietary)
 - [x] Compatible with models from Thingiverse
 - [x] Supports multiple different filament types
-- [x] Ethernet/Wifi connectivity
-- [x] Non-fire causing* (precautions taken)
+- [x] Ethernet/Wifi connectivity (*NEW*)
+- [x] Non-fire causing* (precautions taken) (*NEW*)
 - [ ] Enclosed 
 - [ ] Metal Frame 
 - [ ] Dual Extruder (can be used to make dissolvable support structures)
 
 The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity was solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (Marlin firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
 
+A note about toxicity. It's important to understand the risks with 3D printing. At the moment my interest is with PLA which seems to be fairly harmless (emissions/non-toxic) vs. ABS which emits formaldehyde and other particulates. I'd recommend watching a series of studies done by [diy3dtech](http://diy3dtech.com/3d-printing-and-air-quality-risks/)
+
 
 ### Resources
 
-Yuge list of resources for the A8:
 
-[3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
+Yuge list of resources for the A8 - [3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
 
-I'm not a facebook guy but this is a great group to lurk on:
+I'm not a facebook guy but this is a great group to lurk on - [Official, Anet, A8R 3D printer Support Group](https://www.facebook.com/groups/1068531466501015)
 
-[Official, Anet, A8R 3D printer Support Group (Inc RepRap Prusa i3 clones)](https://www.facebook.com/groups/1068531466501015)
 
-Good write up on steps for after build:
+###### Post build
+Good write up on steps for after build - [Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/)
 
-[Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/)
+Another decent write up, this time as a top 25 - [25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/)
 
-Another decent write up, this time as a top 25:
-
-[25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/)
-
+Help with common print issues - [Simplify3d Quality Troublshooting Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/)
 
 
 ###### Few sites for models:
@@ -75,8 +73,6 @@ As a final note, wrapping the cabling was a bit more challenging than I thought.
 
 ### Few shots of the build process
 
-
-
 ![kit as it came](https://github.com/andruschak/3d-printing/blob/master/images/kit-small.png)
 Kit as it came in the box 
 
@@ -92,14 +88,14 @@ The finished printer
 
 ### Garbled LCD
 
-The LCD ribbon isnt sheilded and initially I encountered issues with garbled characters. Moving the bed and extruder cabling away from the ribbon solved the issue.
+The LCD ribbon isnt sheilded and initially I encountered issues with garbled characters. Moving the bed and extruder cabling away from the ribbon solved the issue. *UPDATE* this issue cropped up again with the switch to the Marlin Firmware, see below.
  
 
 ### Initial Configuration and Leveling
 
 I wanted to use the default firmware for the first few prints to make sure it would work as expected. This took a bit of experimenting. My kit came with an auto-leveling sensor which I didn't install until after my first couple prints. At first, I did not realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
 
-The default firmware had an auto-level menu selection. This would move the nozzle to the lf, rf, rb, lb allowing you to tweak the paper drag under each test point.
+The default firmware had an auto-level menu selection. This would move the nozzle to the lf, rf, rb, lb allowing you to tweak the paper drag under each test point. It seemed to work fine.
 
 Also, I found when using a piece of A4 paper to calibrate, I got best results when it was a light drag on the paper vs a heavy press.
 
@@ -181,7 +177,7 @@ I knew it wouldn't take long until I ran out of the small roll of white PLA (25m
 
 For starters I am mainly interested in PLA. Truth by told, I havent done a ton of research on the different types of printable material out there. According to the wiki, this printer supports a pretty wide range - ABS/PLA/TPU/Wood/Nylon/PVA/PP/Luminescent.
 
-PLA doesn't have much of a smell which is nice. 
+PLA doesn't have much of a smell which is nice.
 
 For replacement, I picked up a couple 1kg rolls of AMZ3D PLA in orange and black. They get decent reviews online and have come recommended by a few friends so I thought I would give it a try. Came to about 25$ with shipping for each roll.
 
@@ -191,9 +187,11 @@ Just to note, there are many different ways advocated on the net. Some take off 
 
 ### Support or no support?
 
-This really depends on what you're printing. I've found if I can get away without supports it is better - especially when you want parts to slot together.
+This really depends on what you're printing. I've found if I can get away without supports it is better. This is especially true when you want parts to slot together.
 
 If the area is super tight it can be very hard to pull out the small breakaway parts. 
+
+I've found it is possible to print 45 degree angles without support. Benchy's are designed to be printed without support and really highlight whats possible. I'd say by default I woud try to avoid.
 
 ## Upgrade Prints
 
@@ -328,7 +326,7 @@ define Z_SAFE_HOMING
 
 ------
 
-##### LCD garbling
+##### LCD garbling - revenge!
 
 Deja Vu - a garbled LCD - didn't we talk about this earlier?
 
@@ -460,3 +458,6 @@ X-Robots-Tag: noindex, nofollow, noimageindex
 
 
 ##### Batman headphone stand
+
+
+##### Google home mini wall plug hanger
