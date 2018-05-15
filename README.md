@@ -32,18 +32,17 @@ A note about toxicity. It's important to understand the risks with 3D printing. 
 
 ### Resources
 
+[3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8) - Yuge list of resources for the A8
 
-Yuge list of resources for the A8 - [3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8)
-
-I'm not a facebook guy but this is a great group to lurk on - [Official, Anet, A8R 3D printer Support Group](https://www.facebook.com/groups/1068531466501015)
+[Official, Anet, A8R 3D printer Support Group](https://www.facebook.com/groups/1068531466501015) - I'm not a facebook guy but this is a great group to lurk on
 
 
 ###### Post build
-Good write up on steps for after build - [Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/)
+[Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/) - Good write up on steps for after build
 
-Another decent write up, this time as a top 25 - [25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/)
+[25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/) - Another decent write up, this time as a top 25
 
-Help with common print issues - [Simplify3d Quality Troublshooting Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/)
+[Simplify3d Quality Troublshooting Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/) - Help with common print issues
 
 
 ###### Few sites for models:
@@ -458,13 +457,7 @@ X-Robots-Tag: noindex, nofollow, noimageindex
 
 ![Articulating butterfly](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.jpg)
 
-![Batman Headphone Stand](https://github.com/andruschak/3d-printing/blob/master/images/hm-headphone-stand.jpg)
+![Batman Headphone Stand](https://github.com/andruschak/3d-printing/blob/master/images/bm-headphone-stand.jpg)
 
-<<<<<<< HEAD
 ![Google Home Mini Wall Hanger](https://github.com/andruschak/3d-printing/blob/master/images/gh-holder.jpg)
-=======
-##### Batman headphone stand
 
-
-##### Google home mini wall plug hanger
->>>>>>> 89f7e4cdc8586bed5d3f1cc93caa6885d9574881
