@@ -293,9 +293,9 @@ There are a few differences in this firmware compared to stock. The button selec
 *** Make sure you go through this file and understand what it is doing or you can end up doing nasty things! ***
 
 ```
-// increased the jerk rate by 10 (original 10)
-define DEFAULT_XJERK                 20.0
-define DEFAULT_YJERK                 20.0
+// had originally increased to 20 but reflashed back to 10
+define DEFAULT_XJERK                 10.0
+define DEFAULT_YJERK                 10.0
 define DEFAULT_ZJERK                  0.3
 define DEFAULT_EJERK                  5.0
 
@@ -379,7 +379,20 @@ G1 X65.478 Y56.26 E0.21309
 
 ##### Pre/Post gcode
 
-Sample post - move bed out instead of in. 
+Sample post gcode - move bed out instead of leaving it in - WIP
+
+```
+M104 S0 ;extruder off
+M140 S0 ;heated bed off
+G91 ;relative positioning
+G1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more
+G28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way
+G1 Y150 F3600 ;move completed part out
+M106 S127 ; set the fan to roughly 50% power
+M84 ;steppers off
+G90 ;absolute positioning
+```
 
 ------
 
@@ -445,13 +458,12 @@ X-Robots-Tag: noindex, nofollow, noimageindex
 
 ## Next steps
 
-- [-] Safety upgrades
-- [ ] Highlevel gcode information
+- [x] Safety upgrades (extruder wires/secure bed cables/mosfet)
+- [x] Highlevel gcode information
+- [x] Flash firmware to Marlin (Skynet 3D is obsolete)
+- [x] Build octoprint box from rpi
 - [ ] Write up on 2D plotting
 - [ ] Glass plate (ordered, but pretty happy with the painters tape)
-- [ ] Flash firmware to Marlin (Skynet 3D is obsolete)
-- [-] Build octoprint box from rpi
-
 
 ## Prints
 
