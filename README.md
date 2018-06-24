@@ -398,7 +398,15 @@ G90 ;absolute positioning
 
 ### Octoprint
 
-Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser. One thing to note is the webcam is viewable without logging in.
+Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser. 
+
+I am running my install on a raspberry pi 3. Works fantastic.
+
+One thing to note is the webcam is viewable without logging in. Do not expose Octoprint to the web without taking that into consideration. 
+
+[Octoprint](https://octoprint.org/)
+
+[Octopi download](https://octoprint.org/download/)
 
 It offers a ton of great features:
 
@@ -426,11 +434,9 @@ So far I am very impressed with the Octoprint and would recommend giving it a tr
 
 Previously I was slicing on the PC and using the SD card (which worked well). I am still using the PC for slicing but drag/dropping to the web interface.
 
-Screenshot
+![Octoprint screenshot](https://github.com/andruschak/3d-printing/blob/master/images/octoprint.png)
 
-Screenshot
 
-Screenshot
 
 ##### Octoprint API
 
@@ -467,9 +473,19 @@ X-Robots-Tag: noindex, nofollow, noimageindex
 
 ## Prints
 
-![Articulating butterfly](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.jpg)
+Butterfly - built as one piece. 
+
+![Articulating butterfly being built](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.jpg)
+
+![Articulating butterfly in action](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.gif)
+
+------
 
 ![Batman Headphone Stand](https://github.com/andruschak/3d-printing/blob/master/images/bm-headphone-stand.jpg)
+
+------
+
+Great way to save space. Also cool for surround sound. Plug 2 or 3 around a room and ask for nature sounds.
 
 ![Google Home Mini Wall Hanger](https://github.com/andruschak/3d-printing/blob/master/images/gh-holder.jpg)
 
