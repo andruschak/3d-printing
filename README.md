@@ -202,35 +202,7 @@ I've found it is possible to print 45 degree angles without support. Benchy's ar
 
 [Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
 
-[Heatbed Cable Holder for Anet A8](https://www.thingiverse.com/thing:1875869)
-
 [AMZ3D PLA spool hub](https://www.thingiverse.com/thing:1955324)
-
-## Example prints
-
-I will upload more as I go.
-
-![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
-
-360 cooling to replace stock fan extruder blower. As seen in Cura screenshot above.
-
-![pen holder for 2D plotting](https://github.com/andruschak/3d-printing/blob/master/images/finished-pen-holder-small.png)
-
-Little more complex - pen holder to convert the printer to a 2D plotter. Quality has improved since first couple prints, tweaking software settings
-
-![T bracket mod](https://github.com/andruschak/3d-printing/blob/master/images/finished-t-small.png)
-
-Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
-
-##### Timelapse Video
-[![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
-
-Timelapse video of T bracket build
-
-
-##### Print evolution
-
-Same part, many tweaks. Show the 2nd print and the 8th print. Maybe the alien prints?
 
 
 ------
@@ -247,16 +219,24 @@ There is a lot of buzz on the Internet regarding this machine and it's potential
 
 Secure moving cables to prevent movement fatigue on the connectors to the bed and extruder. 
 
-Picture of the bed
+[Heatbed Cable Holder for Anet A8](https://www.thingiverse.com/thing:1875869)
+
+![Picture of the bed cabling](https://github.com/andruschak/3d-printing/blob/master/images/bed-cable-tie.png)
+
 
 Picture of the extruder
+![Picture of the bed cabling](https://github.com/andruschak/3d-printing/blob/master/images/extruder-cable-tie.png)
+
 
 Isolate Heatbed via MOSFET
 
+------
 
 ##### Software
 
 Upgrade firmware - Marlin 1.1.8 (at time of writing)
+
+[Marlin Firmware page](http://marlinfw.org/)
 
 There are some reasons for upgrading:
 
@@ -334,6 +314,8 @@ Well, it appears to be an issue with the A8 LCD and the Marlin software. Some co
 In the meantime, I hope it is something fixed in software.
 
 ![Garbled LED](https://github.com/andruschak/3d-printing/blob/master/images/garbled-display.jpg)
+
+------
 
 ### gcode
 
@@ -473,7 +455,34 @@ X-Robots-Tag: noindex, nofollow, noimageindex
 
 ## Prints
 
-Butterfly - built as one piece. 
+## Example prints
+
+I will upload more as I go.
+
+![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
+
+360 cooling to replace stock fan extruder blower. As seen in Cura screenshot above.
+
+![pen holder for 2D plotting](https://github.com/andruschak/3d-printing/blob/master/images/finished-pen-holder-small.png)
+
+Little more complex - pen holder to convert the printer to a 2D plotter. Quality has improved since first couple prints, tweaking software settings
+
+![T bracket mod](https://github.com/andruschak/3d-printing/blob/master/images/finished-t-small.png)
+
+Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
+
+##### Timelapse Video
+[![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
+
+Timelapse video of T bracket build
+
+
+##### Print evolution
+
+#### Butterfly
+Built as one piece! Very cool showcase
+
+[Articulating butterfly STL](https://www.thingiverse.com/thing:2810756)  
 
 ![Articulating butterfly being built](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.jpg)
 
@@ -481,11 +490,19 @@ Butterfly - built as one piece.
 
 ------
 
+#### Batman headphone stand
+Had to print smaller than I would have hoped because of bed size limitations on the A8. Turned out ok though.
+
+[Batman Headphone Stand STL](https://www.myminifactory.com/object/3d-print-batman-heatset-stand-21232) 
+
 ![Batman Headphone Stand](https://github.com/andruschak/3d-printing/blob/master/images/bm-headphone-stand.jpg)
 
 ------
 
+#### Google Home Mini Wall Holder
 Great way to save space. Also cool for surround sound. Plug 2 or 3 around a room and ask for nature sounds.
+
+[Google Home Mini Wall Hanger STL](https://www.thingiverse.com/thing:2625545)
 
 ![Google Home Mini Wall Hanger](https://github.com/andruschak/3d-printing/blob/master/images/gh-holder.jpg)
 
