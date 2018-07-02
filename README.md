@@ -240,26 +240,26 @@ Upgrade firmware - Marlin 1.1.8 (at time of writing)
 
 There are some reasons for upgrading:
 
-- to enable thermal runaway protection 
-- (better) auto-leveling support - my original a8 firmware had some sensor support (4 point)
-- control of features and menu items
+- enable thermal runaway protection 
+- 9 point auto-leveling support - the original a8 firmware used a 4 point calibration
+- control of features and menu items you want to use
 - review the code yourself
-- you want a garbled LCD display (seems to be a bug)
+- you want a garbled LCD display (seems to be a bug) /s
 
 
 There are good resources on how to do the install. Apparently you can use a native framwork (platform.io?) to configure and upload. I went the arduino path as I have a lot of experience in that space. Pay special attention to the settings in configuration.h - there were many tweaks I had to make here in order to accomodate for placement of the z-axis sensor and bed cable bracket. There are tons of experiemental componants commented out - like printing chocolate or driving LED lights!
 
 Here are the highlevel steps I followed:
 
-- Download arduino software
+- Download arduino IDE software
 - Download Skynet 3D drivers (for arduino hardware plugin)
 - Download Marlin 1.1.8
 - Unzip em all
 - install arduino
-- Copy Skynet "hardware" folder into your arduino user dir
+- Copy Skynet "hardware" folder into your arduino user dir (only part of skynet I that was needed)
 - Copy Marlin example for anet a8 configuration.h and configuration_adv.h to root Marlin folder and overwrite the existing files
-- Fire up the Marlin.ino file and edit on of the files you just copied in the arduino IDE
-- Edit Configuration.h - see below
+- Fire up the Marlin.ino file and edit on of the files you just copied in the arduino IDE (double click marlin.ino)
+- Edit Configuration.h - example below
 - Connect the printer to the computer via usb
 - Select the Anet 1.0 board
 - Select the proper comm port
@@ -361,7 +361,7 @@ G1 X65.478 Y56.26 E0.21309
 
 ##### Pre/Post gcode
 
-Sample post gcode - move bed out instead of leaving it in - WIP
+Sample post gcode - move bed out instead of retracting it in - still a WIP
 
 ```
 M104 S0 ;extruder off
@@ -414,7 +414,13 @@ Here is the highlevel steps I used (took 15mins):
 
 So far I am very impressed with the Octoprint and would recommend giving it a try. It adds a whole new dimension to the experience. Being able to watch the feed from anywhere is nice. 
 
-Previously I was slicing on the PC and using the SD card (which worked well). I am still using the PC for slicing but drag/dropping to the web interface.
+Previously I was slicing on the PC and using the SD card (which worked well). I am still using the PC for slicing but drag/dropping to the web interface has replaced the need for SD cards.
+
+Random notes:
+
+- Be careful manipulating the bed and extruder using the web buttons. It will exceed distances if told too... 
+- Multiple devices can access the web interface at the same time but can mess up the video feed
+- Updates have gone smoothly
 
 ![Octoprint screenshot](https://github.com/andruschak/3d-printing/blob/master/images/octoprint.png)
 
