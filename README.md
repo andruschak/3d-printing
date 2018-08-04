@@ -4,7 +4,6 @@ This is a chronicle of a project that took to life in 2011 and is still evolving
 
 Some of the original information is gone but I will endeavour to try and find as much of the original plans as I can.
 
-
 Bit of disclaimer - do this at your own risk and understand the laws when utilizing emulation.
 
 ## A brief history
