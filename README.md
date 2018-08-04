@@ -1,518 +1,157 @@
-# Adventures in 3d-printing
+# Building... and rebuilding an arcade machine
 
-First foray into 3D Printing - document is a work in progress
+This is a chronicle of a project that took to life in 2011 and is still evolving today. I am taking the time to put this together online because of a recent tragedy - around 6 months ago the motherboard in the PC died.
 
-
-I figured it was time to give 3D printing a go. I wanted to post my experiences and track it as a project. Of course YMMV and I take no responsibility for anything that happens.
-
-UPDATE: ~~25h~~, ~~50h~~, 75h+ hours of printing and this doc has grown quite a bit!
+Some of the original information is gone but I will endeavour to try and find as much of the original plans as I can.
 
 
-## Part 1. From box to build
+Bit of disclaimer - do this at your own risk and understand the laws when utilizing emulation.
 
-### Printer Criteria:
+## A brief history
 
-I knew I wanted a printer (ever since I saw the first RepRaps && Makerbots) but figured they were too expensive. I love the idea of an Ultimaker, not so much the $2500+ price tag. After researching a bunch of 3D printers (through 2017) I landed on the Anet A8 (which is a Prusa i3 clone). Many may not agree as they've been known to start fires, however, it ticked off a bunch of marks on my printer criteria.
+I love video games. That's it, there is no denying it. I am and always will be a gamer.
+
+Like most kids in the 80's I was bit by the Atari/Nintendo bug early on. Growing up I had a multitude of game systems and spent more time than I care to admit playing them. I can remember renting a copy of Megaman, waking up at 5am to play, so I could sneak in time before my mom booted me outside.
+
+It didn't stop at console games. It branched out to early PC (we're talking 486dx66 until today) and of course in my pre/teen years the Arcade.
+
+Being a maker at heart it only made sense to build my own machine.
+
+## Build criteria
+
+A few of the things I wanted in the build (in no particular order):
+
+- [x] Full sized cabinet (modelled after street fighter/mortal combat dimensions)
+- [x] Perfect height for two 6' adults to stand without bumping into each other
+- [x] Moderately priced
+- [x] Powerful enough to play games like Mortal Kombat 2, Killer Instinct, etc.
+- [x] Detachable control panel
+- [x] Light up transparent marquee
+- [x] Could hold either a CRT or LCD monitor
+- [x] Front panel could be removed to allow for resizing
+- [x] Fit a standard ATX midtower
+- [x] Adjustable speakers mounted a head height
+- [x] Genuine arcade joysticks and 8 buttons per player
+- [ ] Themed decals for the sides, marquee and control panel
+- [ ] External USB connections
+- [ ] Coin slots
+- [ ] Track/Roller ball
+- [ ] Lightgun support
+
+
+## The cabinet
+
+I had the pleasure of working with an at the time co-worker on this piece (he has since retired). Together we modified some rough plans we found on the internet and went about construction. As with any first go-around there are parts we could have done better but overall the results were fantastic.
+
+The cabinet is "bomb-proof". Overall it stands approximately 6 and a 3/4 feet tall and probably weighs over 100lbs. Plywood was used instead of MDF or press-board and the cabinet was assembled using dowel joints and wood glue. It is seperated into upper and lower sections held together with 6 long bolts making it easier to move if required.
+
+The front panel is removable by undoing a couple screws. This was done in the off chance a larger monitor was acquired and the hole needed to be resized.
+
+Behind the cabinet there is a detachable wooden door held on by 2 spring roller catches. Inside there is ample room for a display and pc.
+
+There are 2 holes drilled at the top for speakers and the marquee has a removable plexiglass cover with a light behind.
+
+The outside is finished in a textured gray and black paint. At the time I was unable to find anywhere that would do a custom decal for the sides for under $1000. An additional compromise was not using trim around the edges and instead opting to have the wood rounded.
+
+Another recommendation I would have would be to install external usb ports (like you would see in your vehicle). This would allow for quicker connection of a keyboard/usb stick during troubleshooting or maintenance.
+
+## Build pictures
+
+##### The side panel, stenciled and being cut
+
+![side panel on the table saw](https://github.com/andruschak/arcade-machine/blob/master/images/side-precut.png)
+
+##### Cutouts of the front panel and the paper stencil of the joystick and button layout
+![front panel and paper stencil](https://github.com/andruschak/arcade-machine/blob/master/images/front-panel-preassemble.png)
+
+##### The lower part of the cabinet assembled
+![lower assembly](https://github.com/andruschak/arcade-machine/blob/master/images/lower-assembly-one.png)
+
+##### The upper part of the cabinet during final assembly
+![upper assembly](https://github.com/andruschak/arcade-machine/blob/master/images/upper-assembly-one.png)
+
+##### The upper part complete and primed
+![upper assembly primed](https://github.com/andruschak/arcade-machine/blob/master/images/upper-assembly-two.png)
+
+##### Both the upper and lower componants before assembly
+![upper and lower](https://github.com/andruschak/arcade-machine/blob/master/images/upper-and-lower.png)
+
+## Control Panel
+
+This was probably the most challenging part of the build. In the end it works but there are a few changes I would make if I had to do it again. Here are a few comments and reflections on the build.
+
+The control panel is removable and held on by the same spring roller catches as the back panel. This has been a bit of a life saver as I've had to get in there a few times. It would have been great to put it on hinges. The top of it is covered in plexiglass to make it easier to clean. As part of the finishing I would have liked to put a custom decal or black poster paper to cover up the joystick mounts.
+
+You're going to need a huge amount of room to put in 2 players + trackball. This is what ultimately lead me to leave it unchecked in the requirements list.
+
+As noted in the requirements I wanted to build a panel that would allow two 6' adults to stand side-by-side comfortably. In premise that sounds good but in order to do it we needed to slightly slant the controls for each player. It works but I found it can make certain joystick moves harder to pull off because the stick isnt exactly center. When you've got years and years of muscle memory to pull of a Ryu's hadouken its sucks being off by 10 degrees. My next build will have the joysticks straight up and down and parallel to each other.
+
+All of the parts were ordered from [ultimarc](https://www.ultimarc.com/). The price was quite reasonable coming out at ~$200 with shipping (Nov 2011).
+
+Parts list:
+
+| Hardware                      | Price         | Count  | Total  |
+| :-----------------------------|--------------:| ------:|-------:|
+| I-PAC 2 Interface. USB Cable  | 43.00         | 1      | 43.00  |
+| Mag-Stik Plus Red             | 33.00         | 2      | 66.00  |
+| Classic Pushbuttons. Black    | 1.95          | 2      | 7.80   |
+| Classic Pushbuttons. Blue     | 1.95          | 2      | 7.80   |
+| Classic Pushbuttons. Green    | 1.95          | 2      | 7.80   |
+| Classic Pushbuttons. Red      | 1.95          | 2      | 7.80   |
+| Start Logo Pushbut. Start 1   | 2.90          | 1      | 2.90   |
+| Start Logo Pushbut. Start 2   | 2.90          | 1      | 2.90   |
+| Wiring Kit                    | 22.00         | 1      | 22.00  |
+
+I-PAC 2:
+
+Picking a solid usb-controller to make button mapping WAY easier. A controller specifically designed for arcade input also helps with being able to read a bunch of inputs being pressed at once. For this I went with the I-PAC 2. The modern day versions support a few additional buttons which help with alternate controls such as pause, shuffle, menu, back, etc... I would utilizing these. My I-PAC lets you access these commands via "shift" functions - that is, you hold down Start-P1 and press specific buttons for specific actions.
+
+Joysticks:
+
+I wanted the absolute best option I could find here. It is important that these can take a beating. I ended up going with the Mag-stik and have been very happy with them. A cool feature is the ability to lift and twist the stick to move from 8-way to 4-way controls. This is great for old school games like PACMAN that only support 4 way controls.
+
+Buttons:
+
+As with the joysticks, I wanted the closest thing to real as possible. I am very happy with how the classic pushbuttons worked out. Unfortunately at the time there wasn't an option for LED buttons. This would be a cool feature as you can light them up ingame based on whether or not they're active!
+
+Ensure to make space for wiring and button placement. There is a lot going on in there so leave room.
+
+As mentioned above, there is support for a variety of other buttons. At the very minimum it is advised to have buttons for player 1 and player 2 start and coin add.
+
+Wiring:
+
+This was a lot of a fun. There were a lot of wires to be cut, stripped and crimped to put this together. Overall it works well and didnt require soldering.
+
+## Build Pics
+
+##### Mag-stik close up
+![mag-stik](https://github.com/andruschak/arcade-machine/blob/master/images/joystick.png)
+
+##### Panel during build
+![holes cut](https://github.com/andruschak/arcade-machine/blob/master/images/control-panel-one.png)
+
+##### Finished panel
+![finished panel](https://github.com/andruschak/arcade-machine/blob/master/images/control-panel-finished.png)
+
+ 
+## Display
+
+
+## Sound
+
+
+## The PC
+
+The original PC that I used for this project was a Core2Duo e8400, 4gb ram and a 230gb hd. It proved to be more than adequate horsepower for the games I was looking to play (pre 2000).
+
+
+## The return of PC
  
 
-- [x] Required assembly
-- [x] Entry level price (<500$ - picked up this one for 275$ CAD)
-- [x] Decent build plate size (in this case - 220x220x240mm)
-- [x] Open source/community/hackable (big finger to proprietary)
-- [x] Compatible with models from Thingiverse
-- [x] Supports multiple different filament types
-- [x] Ethernet/Wifi connectivity (*NEW*)
-- [x] Non-fire causing* (precautions taken) (*NEW*)
-- [ ] Enclosed 
-- [ ] Metal Frame 
-- [ ] Dual Extruder (can be used to make dissolvable support structures)
+### Software
 
-The beauty of the A8 is the modability. Many of the deficiencies can be overcome with some creativity and the open source community. The Ethernet/Wifi connectivity was solved with a raspberry pi and [Octoprint](https://octoprint.com). Non-fire causing and other safety concerns addressed via hardware (part/wiring/mosfet upgrades) and software (Marlin firmware). Enclosures can be built to surround the printer. Dual extruders are something I havent looked into, but would likely be a bit more challenging.
+### Front end
 
-A note about toxicity. It's important to understand the risks with 3D printing. At the moment my interest is with PLA which seems to be fairly harmless (emissions/non-toxic) vs. ABS which emits formaldehyde and other particulates. I'd recommend watching a series of studies done by [diy3dtech](http://diy3dtech.com/3d-printing-and-air-quality-risks/)
+### ROMS
 
-
-### Resources
-
-[3DPrint.Wiki](https://3dprint.wiki/reprap/anet/a8) - Yuge list of resources for the A8
-
-[Official, Anet, A8R 3D printer Support Group](https://www.facebook.com/groups/1068531466501015) - I'm not a facebook guy but this is a great group to lurk on
-
-
-###### Post build
-[Best Upgrades for Anet A8 3D Printer](https://pevly.com/anet-a8-upgrades/) - Good write up on steps for after build
-
-[25 Must have upgrades for the Anet A8](https://all3dp.com/1/anet-a8-upgrades-mods/) - Another decent write up, this time as a top 25
-
-[Simplify3d Quality Troublshooting Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/) - Help with common print issues
-
-
-###### Few sites for models and ideas:
-
-[Thingiverse](https://www.thingiverse.com/) - word of caution - ensure it has some build counts and a pic
-
-[MyMiniFactory](https://www.myminifactory.com) - currated list of builds
-
-[Reddit : functionalprint](https://www.reddit.com/r/functionalprint) - constant dose of user submitted practical prints
-
- ------
-
-# Building
-
-### Some assembly required
-
-Overall, I have to say, this was an awesome experience.
-
-The instructions that came with the printer are in Chinese, which made it difficult to build from the manual - so onto youtube. I found a couple good vids on the process but continued to reference the official manual to ensure I was using the right screw for the right part. That added some serious time but it never hurts to double check.
-
-The molded x-axis motor mount had a slight crack in it but didnt look like it would affect operation. On that note though, the x-axis rods were an insanely tight fit. I would recommend test assembling that before you have it all put together (I had to back step a bit here). I used some fine sandpaper to open the holes up a bit so the rods would fit flush.
-
-Altogether it probably took me a solid 8-10h to build. That was broken up over a 3 days. I left the brown sticker on the acrylic because I think it ends up looking cooler - and saved me a ton of peeling time. That did mean everything fit a bit more snug but it will probably add some strength to the overall chassis in the end.
-
-As a final note, wrapping the cabling was a bit more challenging than I thought. Ive done a lot of computer builds in my day and feel I am pretty adept at cable management. I will admit this took me a few times to get wired the way I wanted. Adding in the auto-leveller later forced me to re-wrap the extruder bundle. I also managed to cut through one of the ground cables to when snipping the cable wrap - rookie move - fixed it with a quick solder. Maybe that just adds character?
-
-# Eye-candy
-
-### Few shots of the build process
-
-![kit as it came](https://github.com/andruschak/3d-printing/blob/master/images/kit-small.png)
-Kit as it came in the box 
-
-![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/master/images/basic-frame-small.png)
-Basic frame starting to look like a printer
-
-![mid build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/images/physical-complete-small.png)
-Physical is complete, onto electronics 
-
-![finished printer](https://github.com/andruschak/3d-printing/blob/master/images/finished-small.png)
-The finished printer
- 
-
-### Garbled LCD
-
-The LCD ribbon isnt sheilded and initially I encountered issues with garbled characters. Moving the bed and extruder cabling away from the ribbon solved the issue. *UPDATE* this issue cropped up again with the switch to the Marlin Firmware, see below.
- 
-
-### Initial Configuration and Leveling
-
-I wanted to use the default firmware for the first few prints to make sure it would work as expected. This took a bit of experimenting. My kit came with an auto-leveling sensor which I didn't install until after my first couple prints. At first, I did not realize that the auto-level actually replaces the need for the physical z-axis switch. Again, youtube to the rescue.
-
-The default firmware had an auto-level menu selection. This would move the nozzle to the lf, rf, rb, lb allowing you to tweak the paper drag under each test point. It seemed to work fine.
-
-Also, I found when using a piece of A4 paper to calibrate, I got best results when it was a light drag on the paper vs a heavy press.
-
-I left the 4 corners of the bed about 1/2 way tightened. Many said to tighten all the way down to start, but I found I had to drop the bed in order to get the right height, so it took a couple retries. Make sure to tighten the wingnuts snug before printing - I had 1/2 a side come loose after a print and throw my calibration out of whack.
-
-Updated below: Initial Configuration and Leveling of the Firmware update section
-
-------
-
-# Software
-
-There are a ton of packages out there you can use. For quick results I wanted to be able to browse Thingiverse and convert the stl to gcode - cura came highly recommended. It was quite easy to pick up and learn. The printer cannot handle .stl files directly, so cura is needed to generate a gcode file (more on these later).
-
-### Slicers
-
-[Ultimaker cura:](https://ultimaker.com/en/products/ultimaker-cura-software) quick and easy out of the box. Running in Win10.
-
-I must say after spending a couple hours using Cura I am pretty happy with its balance of features vs usability. It took a little while to get used to the interface (it looks to have gone through GUI change recently making many old posts obsolete). 
-
-Setup was easy. Install and run. It prompted for a default printer (I picked Pruse i3 clone) but still had to go into the device and modify the bed size parameters.  
-
-Loading models was easy as well. Open the .stl file and it will import into the application. It also auto detected the SDcard and prompted to save and eject (its the little things!)
-
-Pay particular attention to the settings on the right hand side. You can see mine attached. Note there is a section for "generating support". This instructs the printer to build disposable support structures. 
-
-A cool feature is enabling the layers view, selecting a specific layer and watching it simulate the print. 
-
-It also has usb support for hooking directly to your printer but I havent tried that.
-
-![Cura screenshot with settings](https://github.com/andruschak/3d-printing/blob/master/images/360-cooler.png)
-
-
-### 3d Model Creation
-
-I hope to start creating my own models shortly, the in mean time, here are a few links.
-
-[Sketchup:](https://www.sketchup.com/) Formally Google Sketchup. Ive used this in other projects. Pretty good and free.
-
-[Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
-
-
-------
- 
-# Printing
-
-### Anet A8 settings
-
-This is close to the defaults that came with Cura under draft quality. For simple prints it has been excellent. The temps were what the machine was set to by default (200F/60F).
-
-I am currently trying a more complex build to see how to holds up. Watch the "support" check. It will auto generate supports for overhangs. Printing my first support in aforementioned complex build. You can view the layers by selecting the object and the layers button.
-
-Name   | Setting
------------- | -------------
-Layer Height | 0.2
-Wall Thickness | 0.8
-Infill | 20
-Print Temp | 200
-Build Plate Temp | 60
-Diameter | 1.75mm
-Flow | 100
-Speed | 60
-Travel | 120
-Cooling | Y
-Support | Y
-Adhesion | Brim
-Width | 8
-
-### Adhesion
-
-Admittedly still new to this. The hotbed came pre-tapped from the factory and I mistakenly peeled it off to free my first build. Quick lesson... masking tape doesnt work as a substitute. Snagged some blue extra-wide painters tape and it works beautifully.
-
-The first prints confused me a bit as it was creating a dummy layer around the base. Turns out this is totally normal, in fact, it is called a "brim", and is designed to break off the final print. If you have issues with the brim layer it is likely your bed leveling or z-offset is out of whack (important lessons learned!). You can also select raft or skirt as possible preprint selections. I've never tried raft, but use skirt regularly. My printer seems to have a slight delay in extruding so it gets the filament flowing. I usually end up with only 3/4 of the skirt though.
-
-I did end up getting a glass plate with binder clips to try. But I am not sure how well the inductive sensor will work having a glass buffer before the bed (may require a sensor swap). Honestly though, the taping setup is cheap and is working fine. Adhesion is good and removal fairly painless. The worst case is a munged up tape job. The only downside to the tape so far is that it results in a less than perfect print face because of the tape lines on the bed. 
-
-### Notes on filament
-
-I knew it wouldn't take long until I ran out of the small roll of white PLA (25m ?) that came with the printer. However, it produced a 360 cooling blower, 2 T brackets, a pen holder and a heart shaped trinket for the Mrs. Overall, I must say, I am pleasantly surprised at the ratio of print to raw material put in.
-
-For starters I am mainly interested in PLA. Truth by told, I havent done a ton of research on the different types of printable material out there. According to the wiki, this printer supports a pretty wide range - ABS/PLA/TPU/Wood/Nylon/PVA/PP/Luminescent.
-
-PLA doesn't have much of a smell which is nice.
-
-For replacement, I picked up a couple 1kg rolls of AMZ3D PLA in orange and black. They get decent reviews online and have come recommended by a few friends so I thought I would give it a try. Came to about 25$ with shipping for each roll.
-
-Changing the filament was pretty simple. There are a few different methods. I enabled PLA preheat to get it up to the melting point, cut the old filament flush with the entrance to the extruder, cut a point on the end of the new spool, and started to push a bit. Once it bit I used the menu stepper control to feed it though, voila, the white turned black and it was good to go. I didn't end up taking off the front mount fan. I have heard it can be a pain in the ass but the previous method seemed to work for me.
-
-Just to note, there are many different ways advocated on the net. Some take off the fan, just push it through, some pull it out (though it can get cool and stuck forcing you to take things apart).
-
-### Support or no support?
-
-This really depends on what you're printing. I've found if I can get away without supports it is better. This is especially true when you want parts to slot together.
-
-If the area is super tight it can be very hard to pull out the small breakaway parts. 
-
-I've found it is possible to print 45 degree angles without support. Benchy's are designed to be printed without support and really highlight whats possible. I'd say by default I woud try to avoid.
-
-## Upgrade Prints
-
-[Anet A8 T corner](https://www.thingiverse.com/thing:1672959)
-
-[Anet A8 Prusa i3 Simple filament guide (Horizontal)](https://www.thingiverse.com/thing:1764285)
-
-[Hesine M-505, Anet A8 - Center Nozzle Fan](https://www.thingiverse.com/thing:1620630)
-
-[Remixed Y axis belt tightener for A8, A6](https://www.thingiverse.com/thing:1755471)
-
-[AMZ3D PLA spool hub](https://www.thingiverse.com/thing:1955324)
-
-
-------
-
-## Part 2: The build continues
-
-After the first 20h or so of printing, I have gotten to know the basics fairly well. What better time to start over with a new firmware and updated settings? This process was pretty straight forward though there are many possible pitfalls. 
-
-### Safety
-
-There is a lot of buzz on the Internet regarding this machine and it's potential hazards. It is highly recommended by the online community to perform some upgrades. I will cover, securing cabling for the hotbed and extruder, installing a mosfet and flashing the firmware.
-
-##### Hardware
-
-Secure moving cables to prevent movement fatigue on the connectors to the bed and extruder. 
-
-[Heatbed Cable Holder for Anet A8](https://www.thingiverse.com/thing:1875869)
-
-![Picture of the bed cabling](https://github.com/andruschak/3d-printing/blob/master/images/bed-cable-tie.png)
-
-
-Picture of the extruder
-![Picture of the bed cabling](https://github.com/andruschak/3d-printing/blob/master/images/extruder-cable-tie.png)
-
-
-Isolate Heatbed via MOSFET
-- Photos and process to come
-
-------
-
-##### Software
-
-Upgrade firmware - Marlin 1.1.8 (at time of writing)
-
-[Marlin Firmware page](http://marlinfw.org/)
-
-There are some reasons for upgrading:
-
-- enable thermal runaway protection 
-- 9 point auto-leveling support - the original a8 firmware used a 4 point calibration
-- control of features and menu items you want to use
-- review the code yourself
-- you want a garbled LCD display (seems to be a bug) /s
-
-
-There are good resources on how to do the install. Apparently you can use a native framwork (platform.io?) to configure and upload. I went the arduino path as I have a lot of experience in that space. Pay special attention to the settings in configuration.h - there were many tweaks I had to make here in order to accomodate for placement of the z-axis sensor and bed cable bracket. There are tons of experiemental componants commented out - like printing chocolate or driving LED lights!
-
-Here are the highlevel steps I followed:
-
-- Download arduino IDE software
-- Download Skynet 3D drivers (for arduino hardware plugin)
-- Download Marlin 1.1.8
-- Unzip em all
-- install arduino
-- Copy Skynet "hardware" folder into your arduino user dir (only part of skynet I that was needed)
-- Copy Marlin example for anet a8 configuration.h and configuration_adv.h to root Marlin folder and overwrite the existing files
-- Fire up the Marlin.ino file and edit on of the files you just copied in the arduino IDE (double click marlin.ino)
-- Edit Configuration.h - example below
-- Connect the printer to the computer via usb
-- Select the Anet 1.0 board
-- Select the proper comm port
-- Click the "->" to compile and upload to the printer
-- The printer will reboot and you're good to go!
-
-There are a few differences in this firmware compared to stock. The button selections have changed, center is menu and ok for example.
-
-##### Configuration.h file
-
-*** Make sure you go through this file and understand what it is doing or you can end up doing nasty things! ***
-
-```
-// had originally increased to 20 but reflashed back to 10
-define DEFAULT_XJERK                 10.0
-define DEFAULT_YJERK                 10.0
-define DEFAULT_ZJERK                  0.3
-define DEFAULT_EJERK                  5.0
-
-// replaces the default Z-Axis (expects same pin)
-define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
-
-// enable fixed probe – mine is inductive
-define FIX_MOUNTED_PROBE
-
-// set the location of the probe in relation to the Nozzle (off the back of the extruder module – from wiki)
-define X_PROBE_OFFSET_FROM_EXTRUDER 15   // X offset: -left  +right  [of the nozzle]
-define Y_PROBE_OFFSET_FROM_EXTRUDER 55   // Y offset: -front +behind [the nozzle]
-define Z_PROBE_OFFSET_FROM_EXTRUDER 1   // Z offset: -below +above  [the nozzle]
-
-// bed leveling algorithm – 9-point touch
-define AUTO_BED_LEVELING_BILINEAR
-
-// modified the 9 point touch to not hit the printed bed cable holder
-define LEFT_PROBE_BED_POSITION 15
-define RIGHT_PROBE_BED_POSITION 190
-define FRONT_PROBE_BED_POSITION 45
-define BACK_PROBE_BED_POSITION 160
-
-// in case you’re off the bed and there is no metal for the sensor to sense
-define Z_SAFE_HOMING
-```
-
-------
-
-##### LCD garbling - revenge!
-
-Deja Vu - a garbled LCD - didn't we talk about this earlier?
-
-Well, it appears to be an issue with the A8 LCD and the Marlin software. Some comments seem to indicate a problem with the arduino refresh rates and the A8 setup. Others talk about interference. It is possible to click manu-menu-menu to have it reset without impact to the print process. I am going to try and sheild the cable to see if that helps.
-
-In the meantime, I hope it is something fixed in software.
-
-![Garbled LED](https://github.com/andruschak/3d-printing/blob/master/images/garbled-display.jpg)
-
-------
-
-### gcode
-
-gcode is a programming language used by humans to tell computerized machine tools what to do. In the case of a 3D printer it's a set of instructions telling the fans, heated components & e/x/y/z motors what to do in order to create each printed layer. The gcode file is plain-text and is typically generated by modelling software - in our case Cura after the slicing is complete.
-
-[Simplify3D top 10 gcode commands](https://www.simplify3d.com/support/articles/3d-printing-gcode-tutorial/)
-
-Here is a sample cura file with comments:
-
-```
-;FLAVOR:Marlin
-;TIME:9769
-;Filament used: 11.6661m
-;Layer height: 0.2
-;Generated with Cura_SteamEngine 3.2.1
-M190 S60
-M104 S200
-M109 S200
-M82 ;absolute extrusion mode
-G21 ;metric values
-G90 ;absolute positioning
-M82 ;set extruder to absolute mode
-M107 ;start with the fan off
-G28 X0 Y0 ;move X/Y to min endstops
-G28 Z0 ;move Z to min endstops
-G1 Z15.0 F9000 ;move the platform down 15mm
-G92 E0 ;zero the extruded length
-G1 F200 E3 ;extrude 3mm of feed stock
-G92 E0 ;zero the extruded length again
-G1 F9000
-;Put printing message on LCD screen
-M117 Printing...
-;LAYER_COUNT:199
-;LAYER:0
-M107
-G0 F3000 X62.137 Y58.904 Z0.3
-;TYPE:SKIRT
-G1 F1800 X62.574 Y58.466 E0.03087
-G1 X64.341 Y57.007 E0.14519
-G1 X64.673 Y56.767 E0.16563
-G1 X65.478 Y56.26 E0.21309
-```
-
-##### Pre/Post gcode
-
-Sample post gcode - move bed out instead of retracting it in - still a WIP
-
-```
-M104 S0 ;extruder off
-M140 S0 ;heated bed off
-G91 ;relative positioning
-G1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure
-G1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more
-G28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way
-G1 Y150 F3600 ;move completed part out
-M106 S127 ; set the fan to roughly 50% power
-M84 ;steppers off
-G90 ;absolute positioning
-```
-
-------
-
-### Octoprint
-
-Octoprint is a web interface for your printer. It allows you to control and monitor every aspect of your 3D printer and your printing jobs right from within your browser. 
-
-I am running my install on a raspberry pi 3. Works fantastic.
-
-One thing to note is the webcam is viewable without logging in. Do not expose Octoprint to the web without taking that into consideration. 
-
-[Octoprint](https://octoprint.org/)
-
-[Octopi download](https://octoprint.org/download/)
-
-It offers a ton of great features:
-
-- Open source (fits our conditions above)
-- RPI image
-- Full print control via web interface
-- Video Streaming/Timelapse (keep an eye on the printer when out of the room!)
-- Slicing on box
-- Plug-ins (stats, history, push notifications, etc..)
-- Custom UI scripts (turn on/off, control LEDs, others?)
-- Custom touch screen support
-
-Here is the highlevel steps I used (took 15mins):
-
-- Download octopi (0.14 at time of writing)
-- Flash using Etcher
-- Edit the octopi-network.txt file, uncomment and add your wifi information
-- Boot up rpi with camera
-- Log into web interface
-- Follow wizard (assigning proper values)
-- Connect the usb and test
-- Print!
-
-So far I am very impressed with the Octoprint and would recommend giving it a try. It adds a whole new dimension to the experience. Being able to watch the feed from anywhere is nice. 
-
-Previously I was slicing on the PC and using the SD card (which worked well). I am still using the PC for slicing but drag/dropping to the web interface has replaced the need for SD cards.
-
-Random notes:
-
-- Be careful manipulating the bed and extruder using the web buttons. It will exceed distances if told too... 
-- Multiple devices can access the web interface at the same time but can mess up the video feed
-- Updates have gone smoothly
-
-![Octoprint screenshot](https://github.com/andruschak/3d-printing/blob/master/images/octoprint.png)
-
-
-
-##### Octoprint API
-
-I've been looking to pull some stats out of octoprint to display on a micro-phat. I was able to pull basic info with curl. 
-
-```
-curl -i -k -H "Content-Type: application/json" -H "x-api-key:XXXXXXXXXXXXXXXXXXXXXXXXXX" -X GET https://octoprint.local/api/version
-
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 40
-Cache-Control: max-age=0
-X-Clacks-Overhead: GNU Terry Pratchett
-Set-Cookie: session_P443=.eJyrVopPK0otzlCyKikqTdVRis9MUbKqVlJIUrJSisryy_B38cr2zY009qtKNvTNda3yD4-sjMrKyYhyCS2Pcg_L8DVyNfAP8bVVqtVRykxJzSvJLKnUSywtyYgvqSxIVbLKK83JQZJBMj3CyK0  8MdAWrLO0OLUoHqtcLQDapDRp.DdO2eA.C7_ZDuNHEctv78qnk8vYHpv3KcY; Path=/; HttpOnly
-X-Robots-Tag: noindex, nofollow, noimageindex
-
-{
-  "api": "0.1",
-  "server": "1.3.8"
-}
-```
-
-
-------
-
-## Next steps
-
-- [x] Safety upgrades (extruder wires/secure bed cables/mosfet)
-- [x] Highlevel gcode information
-- [x] Flash firmware to Marlin (Skynet 3D is obsolete)
-- [x] Build octoprint box from rpi
-- [ ] Write up on 2D plotting
-- [ ] Glass plate (ordered, but pretty happy with the painters tape)
-
-## Prints
-
-## Example prints
-
-I will upload more as I go.
-
-![printing air cooler mod](https://github.com/andruschak/3d-printing/blob/master/images/printing-360-aircooler-small.png)
-
-360 cooling to replace stock fan extruder blower. As seen in Cura screenshot above.
-
-![pen holder for 2D plotting](https://github.com/andruschak/3d-printing/blob/master/images/finished-pen-holder-small.png)
-
-Little more complex - pen holder to convert the printer to a 2D plotter. Quality has improved since first couple prints, tweaking software settings
-
-![T bracket mod](https://github.com/andruschak/3d-printing/blob/master/images/finished-t-small.png)
-
-Allows for a more rigid frame. Definate improvement in quality. Seems the A8 likes multiples of 4 in certain settings
-
-##### Timelapse Video
-[![Youtube Timelapse](https://img.youtube.com/vi/Xh2m-gPxqYk/0.jpg)](https://www.youtube.com/watch?v=Xh2m-gPxqYk)
-
-Timelapse video of T bracket build
-
-
-##### Print evolution
-
-#### Butterfly
-Built as one piece! Very cool showcase
-
-[Articulating butterfly STL](https://www.thingiverse.com/thing:2810756)  
-
-![Articulating butterfly being built](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.jpg)
-
-![Articulating butterfly in action](https://github.com/andruschak/3d-printing/blob/master/images/butterfly.gif)
-
-------
-
-#### Batman headphone stand
-Had to print smaller than I would have hoped because of bed size limitations on the A8. Turned out ok though.
-
-[Batman Headphone Stand STL](https://www.myminifactory.com/object/3d-print-batman-heatset-stand-21232) 
-
-![Batman Headphone Stand](https://github.com/andruschak/3d-printing/blob/master/images/bm-headphone-stand.jpg)
-
-------
-
-#### Google Home Mini Wall Holder
-Great way to save space. Also cool for surround sound. Plug 2 or 3 around a room and ask for nature sounds.
-
-[Google Home Mini Wall Hanger STL](https://www.thingiverse.com/thing:2625545)
-
-![Google Home Mini Wall Hanger](https://github.com/andruschak/3d-printing/blob/master/images/gh-holder.jpg)
-
+## What's next?
