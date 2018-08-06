@@ -75,17 +75,18 @@ As a final note, wrapping the cabling was a bit more challenging than I thought.
 
 ### Few shots of the build process
 
+##### Kit as it came in the box 
 ![kit as it came](https://github.com/andruschak/3d-printing/blob/master/images/kit-small.png)
-Kit as it came in the box 
 
+##### Basic frame starting to look like a printer
 ![basic frame taking shape](https://github.com/andruschak/3d-printing/blob/master/images/basic-frame-small.png)
-Basic frame starting to look like a printer
 
+##### Physical is complete, onto electronics 
 ![mid build, pre electronics](https://github.com/andruschak/3d-printing/blob/master/images/physical-complete-small.png)
-Physical is complete, onto electronics 
 
+##### The finished printer
 ![finished printer](https://github.com/andruschak/3d-printing/blob/master/images/finished-small.png)
-The finished printer
+
  
 
 ### Garbled LCD
