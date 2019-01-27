@@ -139,6 +139,7 @@ I hope to start creating my own models shortly, the in mean time, here are a few
 
 [Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
 
+UPDATE: I have since spent a few months with Fusion and it's a fantastic piece of software. Please see "Part 3: Modelling" below.
 
 ------
  
@@ -237,7 +238,7 @@ Isolate Heatbed via MOSFET
 
 ------
 
-##### Software
+##### Software & Firmware
 
 Upgrade firmware - Marlin 1.1.8 (at time of writing)
 
@@ -314,7 +315,9 @@ define Z_SAFE_HOMING
 
 Deja Vu - a garbled LCD - didn't we talk about this earlier?
 
-Well, it appears to be an issue with the A8 LCD and the Marlin software. Some comments seem to indicate a problem with the arduino refresh rates and the A8 setup. Others talk about interference. It is possible to click manu-menu-menu to have it reset without impact to the print process. I am going to try and sheild the cable to see if that helps.
+Well, it appears to be an issue with the A8 LCD and the Marlin software. Some comments seem to indicate a problem with the arduino refresh rates and the A8 setup. Others talk about interference. It is possible to click menu-menu-menu to have it reset without impact to the print process. I am going to try and sheild the cable to see if that helps.
+
+Edit: Over the paste year I have moved the wiring around a few times and still have not been able to get through an entire print without it junking up.
 
 In the meantime, I hope it is something fixed in software.
 
@@ -516,4 +519,8 @@ Great way to save space. Also cool for surround sound. Plug 2 or 3 around a room
 [Google Home Mini Wall Hanger STL](https://www.thingiverse.com/thing:2625545)
 
 ![Google Home Mini Wall Hanger](https://github.com/andruschak/3d-printing/blob/master/images/gh-holder.jpg)
+
+
+
+# Part 3. Modelling
 
