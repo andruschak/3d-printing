@@ -139,7 +139,7 @@ I hope to start creating my own models shortly, the in mean time, here are a few
 
 [Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators) havent read much into it yet. Suppose to be complete and free - with learning curve
 
-UPDATE: I have since spent a few months with Fusion and it's a fantastic piece of software. Please see "Part 3: Modelling" below.
+UPDATE: I have since spent a few months with Fusion and it's a fantastic piece of software. Please see the "Modelling" section below.
 
 ------
  
@@ -522,5 +522,15 @@ Great way to save space. Also cool for surround sound. Plug 2 or 3 around a room
 
 
 
-# Part 3. Modelling
+# Modelling
+
+After primarily printing other peoples STL files it was time to get serious about creating my own. 
+
+[Fusion 360:](https://www.autodesk.com/products/fusion-360/students-teachers-educators
+
+## Components
+
+## Start in 2D!
+
+## Other Terminology
 
